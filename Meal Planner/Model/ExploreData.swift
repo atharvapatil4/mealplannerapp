@@ -40,12 +40,18 @@ struct RecipeRequest {
 }
 
 public class ExploreData {
+    enum State {
+        case loading
+       case loaded
+    }
+    var finishedLoading: Bool
     var key: String
     var urlString: String
     var recipeList: [Recipe]
     init() {
-        //recipeList = [Recipe]()
-        recipeList = [Recipe(name: "garbers", picture: UIImage(named: "garbers")!, id: 313, imgType: "jpg", dict: [String:Any]()), Recipe(name: "NYC", picture: UIImage(named: "skyline")!, id: 23, imgType: "jpg", dict: [String:Any]()), Recipe(name: "garbers", picture: UIImage(named: "garbers")!, id: 313, imgType: "jpg", dict: [String:Any]()), Recipe(name: "garbers", picture: UIImage(named: "garbers")!, id: 313, imgType: "jpg", dict: [String:Any]())]
+        finishedLoading = false
+        recipeList = [Recipe]()
+        //recipeList = [Recipe(name: "garbers", picture: UIImage(named: "garbers")!, id: 313, imgType: "jpg", dict: [String:Any]()), Recipe(name: "NYC", picture: UIImage(named: "skyline")!, id: 23, imgType: "jpg", dict: [String:Any]()), Recipe(name: "garbers", picture: UIImage(named: "garbers")!, id: 313, imgType: "jpg", dict: [String:Any]()), Recipe(name: "garbers", picture: UIImage(named: "garbers")!, id: 313, imgType: "jpg", dict: [String:Any]())]
         key = "8b8a10a2cede413daffe571c0a5be321"
         urlString = "https://api.spoonacular.com/recipes/random?number=10&apiKey=8b8a10a2cede413daffe571c0a5be321"
         //refresh()
@@ -53,9 +59,9 @@ public class ExploreData {
     }
     
     func refresh() {
-        defer {
-            
-        }
+//        defer {
+//
+//        }
         print("here0")
         guard let url = URL(string: urlString) else { fatalError("Error getting url") }
         print("here0.5")
@@ -89,6 +95,7 @@ public class ExploreData {
                 }
                 
             }
+            self.finishedLoading = true
         }
         sesh.resume()
     }

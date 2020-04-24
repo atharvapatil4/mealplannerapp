@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="Bd0-Mh-ehJ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YRz-L9-waU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="cC4-ON-lgm"/>
@@ -29,7 +29,7 @@
             <objects>
                 <viewController id="AXX-qw-g9O" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Yq-TC-epR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="IYG-gj-1sC"/>
@@ -148,10 +148,43 @@
             </objects>
             <point key="canvasLocation" x="-819" y="-845"/>
         </scene>
+        <!--Loading View Controller-->
+        <scene sceneID="hse-wd-F4g">
+            <objects>
+                <viewController id="9Eb-1z-feE" customClass="LoadingViewController" customModule="Meal_Planner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OwD-gK-v9t">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Vro-Nw-oqf">
+                                <rect key="frame" x="159" y="302" width="97" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODS-L7-du0">
+                                <rect key="frame" x="147" y="236" width="120" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="3C3-Ta-kkD"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="Vro-Nw-oqf" id="2YP-KA-Gly"/>
+                        <segue destination="8yi-6f-1SJ" kind="show" identifier="doneLoading" id="AlO-aH-Oh9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DLc-xV-s16" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2857.971014492754" y="-332.14285714285711"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="JL4-qA-1vt">
             <objects>
                 <tabBarController id="8yi-6f-1SJ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="MuW-mz-tvU"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MFD-jG-tQk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -287,7 +320,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="uRQ-M8-FDX"/>
-        <segue reference="wp6-pA-oSz"/>
+        <segue reference="FyE-eP-7s8"/>
     </inferredMetricsTieBreakers>
 </document>

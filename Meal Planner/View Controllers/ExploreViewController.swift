@@ -43,7 +43,9 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate, UIColle
        }
     
     override func viewWillAppear(_ animated: Bool) {
+    
         recommendedCollectionView.reloadData()
+       
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -70,10 +72,16 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate, UIColle
     }
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        recommendedCollectionView.delegate = self
-        recommendedCollectionView.dataSource = self
-        print(exploreData.recipeList)
+    
+        defer {
+            super.viewDidLoad()
+            recommendedCollectionView.delegate = self
+            recommendedCollectionView.dataSource = self
+            print(exploreData.recipeList)
+        }
+        
+        exploreData.refresh()
+        
         // Do any additional setup after loading the view.
     }
 

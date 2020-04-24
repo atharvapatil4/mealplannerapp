@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45690815245283F600D86F4A /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45690814245283F600D86F4A /* LoadingViewController.swift */; };
 		4586018B244FDFFF00E4AE3A /* RecommendedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4586018A244FDFFF00E4AE3A /* RecommendedCollectionViewCell.swift */; };
 		4586018D244FE8E500E4AE3A /* ExploreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4586018C244FE8E500E4AE3A /* ExploreData.swift */; };
 		4596B9CE24516F2900DCB298 /* RecipeExpandedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4596B9CD24516F2900DCB298 /* RecipeExpandedViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		45690814245283F600D86F4A /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		4586018A244FDFFF00E4AE3A /* RecommendedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedCollectionViewCell.swift; sourceTree = "<group>"; };
 		4586018C244FE8E500E4AE3A /* ExploreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreData.swift; sourceTree = "<group>"; };
 		4596B9CD24516F2900DCB298 /* RecipeExpandedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeExpandedViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 		45A25EFA244FD27A0094B6BA /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				45690814245283F600D86F4A /* LoadingViewController.swift */,
 				45A25EFB244FD2E20094B6BA /* Explore Tab */,
 			);
 			path = "View Controllers";
@@ -306,6 +309,7 @@
 				4586018B244FDFFF00E4AE3A /* RecommendedCollectionViewCell.swift in Sources */,
 				4596B9CE24516F2900DCB298 /* RecipeExpandedViewController.swift in Sources */,
 				45A25ECD244FD0D30094B6BA /* ExploreViewController.swift in Sources */,
+				45690815245283F600D86F4A /* LoadingViewController.swift in Sources */,
 				4586018D244FE8E500E4AE3A /* ExploreData.swift in Sources */,
 				45A25EC9244FD0D30094B6BA /* AppDelegate.swift in Sources */,
 				4596B9D02451718100DCB298 /* InformationTableViewCell.swift in Sources */,
