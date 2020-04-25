@@ -27,6 +27,7 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     // MARK: - Methods
     override func viewDidLoad() {
+        
         defer {
             super.viewDidLoad()
             recommendedCollectionView.delegate = self
