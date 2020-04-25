@@ -49,15 +49,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Popular Recipes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kDG-Vl-oYy">
-                                <rect key="frame" x="20" y="203" width="130" height="17"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search recipes by name, ingredient, etc." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EyO-SV-FEz">
+                                <rect key="frame" x="64" y="129" width="330" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Popular Recipes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kDG-Vl-oYy">
+                                <rect key="frame" x="21" y="188" width="131" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5C6-HX-lCA">
-                                <rect key="frame" x="39" y="460" width="53" height="30"/>
+                                <rect key="frame" x="39" y="399" width="53" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Popular"/>
                                 <connections>
@@ -65,7 +71,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zps-Zh-Rv8">
-                                <rect key="frame" x="118" y="460" width="74" height="30"/>
+                                <rect key="frame" x="118" y="399" width="74" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Vegetarian"/>
                                 <connections>
@@ -73,7 +79,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1S-H3-HLG">
-                                <rect key="frame" x="217" y="460" width="64" height="30"/>
+                                <rect key="frame" x="217" y="399" width="64" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Balanced"/>
                                 <connections>
@@ -81,7 +87,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d20-lA-LkV">
-                                <rect key="frame" x="301" y="460" width="68" height="30"/>
+                                <rect key="frame" x="301" y="399" width="68" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Low-Carb"/>
                                 <connections>
@@ -89,7 +95,7 @@
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="y1O-RG-TCd">
-                                <rect key="frame" x="20" y="228" width="394" height="181"/>
+                                <rect key="frame" x="20" y="206" width="394" height="181"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.86746525929999996" blue="0.82886094990000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SkP-UE-WmI">
@@ -107,29 +113,29 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3NN-Be-2uj">
-                                                    <rect key="frame" x="2" y="2" width="236" height="82"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="84"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="3NN-Be-2uj" secondAttribute="height" multiplier="219:83" id="hrA-xl-df9"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SMD-Y4-Nly">
-                                                    <rect key="frame" x="5" y="86" width="106" height="53"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SMD-Y4-Nly">
+                                                    <rect key="frame" x="5" y="85" width="151" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="SMD-Y4-Nly" secondAttribute="height" multiplier="2:1" id="3MV-gA-QWg"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="3NN-Be-2uj" secondAttribute="bottom" constant="60" id="2fq-e7-km6"/>
-                                                <constraint firstItem="SMD-Y4-Nly" firstAttribute="top" secondItem="3NN-Be-2uj" secondAttribute="bottom" constant="2" id="3PB-Rv-0ah"/>
+                                                <constraint firstItem="SMD-Y4-Nly" firstAttribute="top" secondItem="3NN-Be-2uj" secondAttribute="bottom" constant="1" id="3PB-Rv-0ah"/>
+                                                <constraint firstAttribute="trailing" secondItem="3NN-Be-2uj" secondAttribute="trailing" id="9ri-WN-v7K"/>
                                                 <constraint firstItem="SMD-Y4-Nly" firstAttribute="leading" secondItem="qOS-zw-3fv" secondAttribute="leading" constant="5" id="BAQ-Dv-N4B"/>
-                                                <constraint firstAttribute="trailing" secondItem="3NN-Be-2uj" secondAttribute="trailing" constant="2" id="Gqx-Qk-77q"/>
-                                                <constraint firstAttribute="bottom" secondItem="SMD-Y4-Nly" secondAttribute="bottom" constant="5" id="iXD-nk-4Za"/>
-                                                <constraint firstItem="3NN-Be-2uj" firstAttribute="leading" secondItem="qOS-zw-3fv" secondAttribute="leading" constant="2" id="pCE-b9-Smn"/>
-                                                <constraint firstItem="3NN-Be-2uj" firstAttribute="top" secondItem="qOS-zw-3fv" secondAttribute="top" constant="2" id="uZs-gB-AWI"/>
+                                                <constraint firstItem="3NN-Be-2uj" firstAttribute="top" secondItem="qOS-zw-3fv" secondAttribute="top" id="MnM-Sp-zQD"/>
+                                                <constraint firstItem="3NN-Be-2uj" firstAttribute="leading" secondItem="qOS-zw-3fv" secondAttribute="leading" id="ZaQ-oi-z5q"/>
+                                                <constraint firstAttribute="bottom" secondItem="SMD-Y4-Nly" secondAttribute="bottom" priority="900" constant="2" id="iXD-nk-4Za"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -141,12 +147,13 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EyO-SV-FEz">
-                                <rect key="frame" x="39" y="114" width="321" height="34"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Explore Recipes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTw-B7-cbp">
+                                <rect key="frame" x="39" y="78" width="211" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.86746525934710195" blue="0.8288609498886288" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="0m2-Yr-QyK"/>

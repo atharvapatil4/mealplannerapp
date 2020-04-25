@@ -53,6 +53,8 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate, UIColle
             //fill entire image view
             cell.recipeImageView.image = recipe.picture
             cell.recipeImageView.contentMode = UIView.ContentMode.scaleAspectFill
+            cell.layer.cornerRadius = 5.0
+            cell.layer.masksToBounds = true
             print("finished cell")
             return cell
         } else {
