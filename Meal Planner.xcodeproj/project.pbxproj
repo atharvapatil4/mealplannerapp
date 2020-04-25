@@ -23,8 +23,6 @@
 		45A25EE0244FD0D60094B6BA /* Meal_PlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A25EDF244FD0D60094B6BA /* Meal_PlannerTests.swift */; };
 		45A25EEB244FD0D60094B6BA /* Meal_PlannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A25EEA244FD0D60094B6BA /* Meal_PlannerUITests.swift */; };
 		64A7DC30C9C2E1E769593F57 /* Pods_Meal_Planner_Meal_PlannerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F95B5DC8D02B50E71F6301B7 /* Pods_Meal_Planner_Meal_PlannerUITests.framework */; };
-		A161E73D2453C8BD005CBC7A /* Merriweather-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A161E73C2453C8BD005CBC7A /* Merriweather-Regular.ttf */; };
-		A161E73E2453C8C0005CBC7A /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A161E73A2453C83E005CBC7A /* OpenSans-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,8 +70,6 @@
 		64CCA6795FD18DF285A4FB4C /* Pods-Meal PlannerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meal PlannerTests.debug.xcconfig"; path = "Target Support Files/Pods-Meal PlannerTests/Pods-Meal PlannerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6E36BD1E605C69843A28B677 /* Pods-Meal Planner-Meal PlannerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meal Planner-Meal PlannerUITests.release.xcconfig"; path = "Target Support Files/Pods-Meal Planner-Meal PlannerUITests/Pods-Meal Planner-Meal PlannerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A05E889E07747717D7654306 /* Pods-Meal Planner-Meal PlannerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meal Planner-Meal PlannerUITests.debug.xcconfig"; path = "Target Support Files/Pods-Meal Planner-Meal PlannerUITests/Pods-Meal Planner-Meal PlannerUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		A161E73A2453C83E005CBC7A /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
-		A161E73C2453C8BD005CBC7A /* Merriweather-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Merriweather-Regular.ttf"; path = "../../../../Downloads/Merriweather (1)/Merriweather-Regular.ttf"; sourceTree = "<group>"; };
 		F95B5DC8D02B50E71F6301B7 /* Pods_Meal_Planner_Meal_PlannerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meal_Planner_Meal_PlannerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -109,7 +105,6 @@
 			isa = PBXGroup;
 			children = (
 				45A25EC7244FD0D30094B6BA /* Meal Planner */,
-				A161E7352453C7AB005CBC7A /* Fonts */,
 				45A25EDE244FD0D60094B6BA /* Meal PlannerTests */,
 				45A25EE9244FD0D60094B6BA /* Meal PlannerUITests */,
 				45A25EC6244FD0D30094B6BA /* Products */,
@@ -208,15 +203,6 @@
 				4D8D360EAF515542E3FA4115 /* Pods-Meal PlannerTests.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		A161E7352453C7AB005CBC7A /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				A161E73C2453C8BD005CBC7A /* Merriweather-Regular.ttf */,
-				A161E73A2453C83E005CBC7A /* OpenSans-Regular.ttf */,
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 		AB7F7DEF1F1109F582A8ADE9 /* Frameworks */ = {
@@ -336,10 +322,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A161E73E2453C8C0005CBC7A /* OpenSans-Regular.ttf in Resources */,
 				45A25ED5244FD0D60094B6BA /* LaunchScreen.storyboard in Resources */,
 				45A25ED2244FD0D60094B6BA /* Assets.xcassets in Resources */,
-				A161E73D2453C8BD005CBC7A /* Merriweather-Regular.ttf in Resources */,
 				45A25ED0244FD0D30094B6BA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
