@@ -7,57 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		009781CA6E7BC32D7FB3FC140AB80775 /* UIFont+OpenSans.h in Headers */ = {isa = PBXBuildFile; fileRef = 910F974CA3AA4EFC9760AD8C18D32400 /* UIFont+OpenSans.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		113AC76D766B53D9C0DBD31296A311E7 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C9A0B672B6CDCA33D84AB895D938167 /* CoreText.framework */; };
-		29BF1D78200B973510E6E6A2493FB18E /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D4965449230147B90C739404310B62C /* OpenSans-Regular.ttf */; };
-		2A095CC044F5DCDA3C5192DA7433837D /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 780D27E1C2A09962E2FC880EC6A4A75B /* OpenSans-ExtraBold.ttf */; };
-		3041E5369BD43328371E34912439A97B /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6FF7AEDFB6AF76F484E0368F72216B1C /* OpenSans-SemiboldItalic.ttf */; };
-		5086314B1A0E95824DF25C5879FA1A92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23621862A99429490F9C983069F078BB /* Foundation.framework */; };
-		563E69E3CF8563C215606766AA2567DE /* Pods-Meal Planner-Meal PlannerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A089878225C5E77B439802C1AE47AE6 /* Pods-Meal Planner-Meal PlannerUITests-dummy.m */; };
-		5DD5159339AA6CD29C8A2CCD135058A6 /* Pods-Meal PlannerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A78DE35349F06AED561D96A9B504F1 /* Pods-Meal PlannerTests-dummy.m */; };
-		61308B75B33681192C6B8B9C42B29E87 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33D67C47D5DFC4128CAC78EBB58803E1 /* OpenSans-ExtraBoldItalic.ttf */; };
-		746BF6F0E9915BAD339ACC9F23A9E360 /* Pods-Meal Planner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AF075ED16E9193F6F6E88F86ECA283F /* Pods-Meal Planner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		75135D169EC04AD6107902A59DA2FFFF /* OpenSans-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 807326EC306C57935FADEC9B9745FF70 /* OpenSans-dummy.m */; };
-		7D47D38EDEC86C4E2306B1A10000D84A /* OpenSans-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FDE233E7F5A3DAE1C37B0C5AECF8A635 /* OpenSans-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8D3B04B8F9A3F071BFDDBEC74FF4BC8A /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B113FF889FE4F23B864B14E9E923627 /* OpenSans-Semibold.ttf */; };
-		8FEE60780CD23A74AC5A6B47CD29C267 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B61456B60404A82DDDADEB18AE0B4B14 /* OpenSans-LightItalic.ttf */; };
-		94D3D05A48E249B36C692AD9971FA9EC /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4A719D8724FC76698CE337DA64F5E2F /* OpenSans-Bold.ttf */; };
-		979C6F56FD702F3A5FB0FE8C53091129 /* Pods-Meal PlannerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AC52FA372E480F70B1A9263C9E64297 /* Pods-Meal PlannerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F3DD1AE3A09506146A0328B5E9140AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 032F67321D34EE01369F5810E71B7660 /* UIKit.framework */; };
-		9FF953ED438FADE748954D8ACD8F6A77 /* UIFont+OpenSans.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4DBF6FCD1205EE0DB09D29590B71E7 /* UIFont+OpenSans.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		A27A3A174F588EEADC58B7A5F739488A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23621862A99429490F9C983069F078BB /* Foundation.framework */; };
-		BB474672C5BD1299846AE782ED74BDD4 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4DA67A4033FF7E35DF37BB8AC882414E /* OpenSans-Light.ttf */; };
-		CCF62930907CD027DA165020A84DE820 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF143BDFEDFF76CD88BA42231B5B01DD /* OpenSans-BoldItalic.ttf */; };
-		D91F5235A53EAD5852867F0C963CD3B3 /* Pods-Meal Planner-Meal PlannerUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E7C202D52BEE5A4D828ECDBAFEAAF01E /* Pods-Meal Planner-Meal PlannerUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DC61BC9E848138C56E8C46FD3825D51C /* OpenSans.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 95244E634CD25D6FAFBE86E6504426B3 /* OpenSans.bundle */; };
-		E9C6A60418B160420472FBBAC508275A /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 99F4C865624A99CDF8E6FC6CB3C07F7C /* OpenSans-Italic.ttf */; };
-		EF7CB81827162B2D467DF9211E188B64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23621862A99429490F9C983069F078BB /* Foundation.framework */; };
-		F0C6014B4CCA104A53C6F5AEFC5C9760 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23621862A99429490F9C983069F078BB /* Foundation.framework */; };
-		F198827B75063B31CD0BB310A2D4EB77 /* Pods-Meal Planner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C82540E439FA8814FAAFB7561366417 /* Pods-Meal Planner-dummy.m */; };
+		0924449CB24BB38078FC7896E84AFCFB /* Pods-Meal Planner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3414A8A692B6B0BF17FF469ED96645 /* Pods-Meal Planner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D65E4F89CAAE48962F4BE1F02F2C18A /* Pods-Meal Planner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FBAA320FFB9C68660FE99F6D57C260 /* Pods-Meal Planner-dummy.m */; };
+		44FFEEC6D7E4554B3FECC93F8772235F /* Pods-Meal Planner-Meal PlannerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBF7C79EB622B39BC9A5A0911166C27 /* Pods-Meal Planner-Meal PlannerUITests-dummy.m */; };
+		5DD5159339AA6CD29C8A2CCD135058A6 /* Pods-Meal PlannerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 980F1B4B71743E75AAA659180E6B6E19 /* Pods-Meal PlannerTests-dummy.m */; };
+		8757030B6BEDE8B36500489228E09195 /* Pods-Meal Planner-Meal PlannerUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DF2956B922E22F68DE76559294DE3985 /* Pods-Meal Planner-Meal PlannerUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		979C6F56FD702F3A5FB0FE8C53091129 /* Pods-Meal PlannerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 71CA4AAD4B4A40F645C3C85EC7BBCC0D /* Pods-Meal PlannerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8E5B852E1F6ACAEC02A940C5EA1D1449 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5D2C062A8FB1A5905A7A79E46FB5EC44;
-			remoteInfo = OpenSans;
-		};
-		C55B8EE6A14176D7E208264A5C090744 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 866AA0434270D3C9C6572C4650E1A7A8;
-			remoteInfo = "OpenSans-OpenSans";
-		};
-		CCD82173B5BBA6E53465B69B97A194AD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5D2C062A8FB1A5905A7A79E46FB5EC44;
-			remoteInfo = OpenSans;
-		};
 		F7ED077F08850201214187657113FDFC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -68,78 +26,48 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E1B072327D033E76F72F80D0EFBDB5 /* Pods-Meal Planner-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Meal Planner-Info.plist"; sourceTree = "<group>"; };
-		032F67321D34EE01369F5810E71B7660 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		06D603A1AA1D16A1D93E6A91490F2F38 /* Pods-Meal Planner-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Meal Planner-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0AF075ED16E9193F6F6E88F86ECA283F /* Pods-Meal Planner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Meal Planner-umbrella.h"; sourceTree = "<group>"; };
-		0B19644DF4B1854C482827E179AC996B /* Pods-Meal Planner-Meal PlannerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Meal Planner-Meal PlannerUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		0C896D1108758E4AC453004D4805E1CA /* OpenSans.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OpenSans.modulemap; sourceTree = "<group>"; };
-		0C9A0B672B6CDCA33D84AB895D938167 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
-		0FFCAD7B309860CC61283EA8B7439C2F /* Pods-Meal Planner-Meal PlannerUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Meal Planner-Meal PlannerUITests.modulemap"; sourceTree = "<group>"; };
-		12BEF1029CC8159C879E9D4B93381D47 /* Pods-Meal Planner-Meal PlannerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Meal Planner-Meal PlannerUITests.release.xcconfig"; sourceTree = "<group>"; };
-		150D15DADFFB2DDD2AAA62A205133DFC /* OpenSans.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OpenSans.framework; path = OpenSans.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A8FC7A085C277510BD0C8881435A7EE /* Pods-Meal PlannerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Meal PlannerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1C82540E439FA8814FAAFB7561366417 /* Pods-Meal Planner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Meal Planner-dummy.m"; sourceTree = "<group>"; };
-		22A634AC7FE4C1E197660A54DD47E985 /* OpenSans.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OpenSans.release.xcconfig; sourceTree = "<group>"; };
-		23621862A99429490F9C983069F078BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		2A089878225C5E77B439802C1AE47AE6 /* Pods-Meal Planner-Meal PlannerUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Meal Planner-Meal PlannerUITests-dummy.m"; sourceTree = "<group>"; };
-		2AE823EDC9785DB84FD4ED38AB641F63 /* Pods-Meal Planner-Meal PlannerUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Meal Planner-Meal PlannerUITests-Info.plist"; sourceTree = "<group>"; };
-		2B113FF889FE4F23B864B14E9E923627 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "OpenSans-Semibold.ttf"; path = "Fonts/OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
-		2FB89C6A5FF76CFD66D5CBFD62643B0F /* Pods-Meal Planner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Meal Planner.modulemap"; sourceTree = "<group>"; };
-		33D67C47D5DFC4128CAC78EBB58803E1 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "OpenSans-ExtraBoldItalic.ttf"; path = "Fonts/OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
-		3A32741E5E84FD9A031E49ADE2BB4B23 /* Pods-Meal PlannerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Meal PlannerTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		3E7318F79AD2DF52F1F04D8EF0C0FF8D /* Pods-Meal Planner-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Meal Planner-acknowledgements.plist"; sourceTree = "<group>"; };
-		4DA67A4033FF7E35DF37BB8AC882414E /* OpenSans-Light.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "OpenSans-Light.ttf"; path = "Fonts/OpenSans-Light.ttf"; sourceTree = "<group>"; };
-		4F14BEEE7D165786832B64C73B6D2D93 /* OpenSans-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "OpenSans-Info.plist"; sourceTree = "<group>"; };
-		514A8B1544EA7E901AD94AABD19B2DF0 /* Pods-Meal Planner-Meal PlannerUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Meal Planner-Meal PlannerUITests-frameworks.sh"; sourceTree = "<group>"; };
-		59A4BB09C2F9B6C2DCB683605B7AB836 /* Pods-Meal PlannerTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Meal PlannerTests-Info.plist"; sourceTree = "<group>"; };
-		5C457786D715DF4370F093C1F9B57C41 /* Pods-Meal Planner-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Meal Planner-frameworks.sh"; sourceTree = "<group>"; };
-		5D4965449230147B90C739404310B62C /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "OpenSans-Regular.ttf"; path = "Fonts/OpenSans-Regular.ttf"; sourceTree = "<group>"; };
-		5DA85BC491EE1CA39C706D4B285DD0B2 /* Pods-Meal Planner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Meal Planner.debug.xcconfig"; sourceTree = "<group>"; };
-		5DD3706336EF2BBA808F91E53C0B264C /* Pods-Meal Planner-Meal PlannerUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Meal Planner-Meal PlannerUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		6BB6E07763F88645130891C183D62179 /* Pods_Meal_PlannerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Meal_PlannerTests.framework; path = "Pods-Meal PlannerTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6FB0E3C1BB61764996EC7E53F7F2CC44 /* ResourceBundle-OpenSans-OpenSans-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-OpenSans-OpenSans-Info.plist"; sourceTree = "<group>"; };
-		6FE79D30AD55E6174646F2A2F2674942 /* Pods-Meal PlannerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Meal PlannerTests.modulemap"; sourceTree = "<group>"; };
-		6FF7AEDFB6AF76F484E0368F72216B1C /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "OpenSans-SemiboldItalic.ttf"; path = "Fonts/OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
-		753D1612E577BB53BE3CD51F8C8C8F40 /* OpenSans-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OpenSans-prefix.pch"; sourceTree = "<group>"; };
-		780D27E1C2A09962E2FC880EC6A4A75B /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "OpenSans-ExtraBold.ttf"; path = "Fonts/OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
-		7BD011E7269F35102B6D973CBE03010B /* Pods_Meal_Planner_Meal_PlannerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Meal_Planner_Meal_PlannerUITests.framework; path = "Pods-Meal Planner-Meal PlannerUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		807326EC306C57935FADEC9B9745FF70 /* OpenSans-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OpenSans-dummy.m"; sourceTree = "<group>"; };
-		900714B6B736E7FD2BD37FC5CCBA2AF1 /* Pods-Meal PlannerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Meal PlannerTests.release.xcconfig"; sourceTree = "<group>"; };
-		910F974CA3AA4EFC9760AD8C18D32400 /* UIFont+OpenSans.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIFont+OpenSans.h"; sourceTree = "<group>"; };
-		91A78DE35349F06AED561D96A9B504F1 /* Pods-Meal PlannerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Meal PlannerTests-dummy.m"; sourceTree = "<group>"; };
-		95244E634CD25D6FAFBE86E6504426B3 /* OpenSans.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = OpenSans.bundle; path = "OpenSans-OpenSans.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		99F4C865624A99CDF8E6FC6CB3C07F7C /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "OpenSans-Italic.ttf"; path = "Fonts/OpenSans-Italic.ttf"; sourceTree = "<group>"; };
-		9A12CE198CC580C31F3F583BEF1F87CE /* Pods_Meal_Planner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Meal_Planner.framework; path = "Pods-Meal Planner.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9AC52FA372E480F70B1A9263C9E64297 /* Pods-Meal PlannerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Meal PlannerTests-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F4DBF6FCD1205EE0DB09D29590B71E7 /* UIFont+OpenSans.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIFont+OpenSans.m"; sourceTree = "<group>"; };
-		B61456B60404A82DDDADEB18AE0B4B14 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "OpenSans-LightItalic.ttf"; path = "Fonts/OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
-		B733D6DD7ED8F5FCC04E796047B562BD /* Pods-Meal PlannerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Meal PlannerTests.debug.xcconfig"; sourceTree = "<group>"; };
-		C655D0688D6E2A0F26E97B1C85521B2D /* Pods-Meal Planner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Meal Planner.release.xcconfig"; sourceTree = "<group>"; };
-		C6AAA0553AFC234AD557E42A2E597027 /* OpenSans.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OpenSans.debug.xcconfig; sourceTree = "<group>"; };
-		DF143BDFEDFF76CD88BA42231B5B01DD /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "OpenSans-BoldItalic.ttf"; path = "Fonts/OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
-		E4A719D8724FC76698CE337DA64F5E2F /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "OpenSans-Bold.ttf"; path = "Fonts/OpenSans-Bold.ttf"; sourceTree = "<group>"; };
-		E7C202D52BEE5A4D828ECDBAFEAAF01E /* Pods-Meal Planner-Meal PlannerUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Meal Planner-Meal PlannerUITests-umbrella.h"; sourceTree = "<group>"; };
-		EA2901ABE9D35D910259E58A192B5320 /* Pods-Meal Planner-Meal PlannerUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Meal Planner-Meal PlannerUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FDE233E7F5A3DAE1C37B0C5AECF8A635 /* OpenSans-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OpenSans-umbrella.h"; sourceTree = "<group>"; };
+		41201E44F3B9D9F4B4B003A3072F4A19 /* Pods-Meal PlannerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Meal PlannerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		46339E2302A4BE7BE95FEB5CBDA97777 /* Pods-Meal Planner-Meal PlannerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Meal Planner-Meal PlannerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		47B60223FBDD88D3C27FD706086D2C12 /* Pods-Meal Planner-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Meal Planner-acknowledgements.markdown"; sourceTree = "<group>"; };
+		47CA984B22CE233EE1795706DEBBC15C /* Pods-Meal Planner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Meal Planner.modulemap"; sourceTree = "<group>"; };
+		48EC762AE8EC92DB1F9F8A43E32DC450 /* Pods-Meal Planner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Meal Planner.debug.xcconfig"; sourceTree = "<group>"; };
+		530B1363728F0CB21B64A4BC470A432F /* Pods-Meal Planner-Meal PlannerUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Meal Planner-Meal PlannerUITests.modulemap"; sourceTree = "<group>"; };
+		5F57A89FFB6CE54C36BDD1AC867D929C /* Pods-Meal Planner-Meal PlannerUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Meal Planner-Meal PlannerUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6B0C8640212B773CA04010F84ED24214 /* Pods-Meal Planner-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Meal Planner-acknowledgements.plist"; sourceTree = "<group>"; };
+		6BB6E07763F88645130891C183D62179 /* Pods_Meal_PlannerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meal_PlannerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7063F1E83CB7C4C7EC198F8A5AD485F8 /* Pods-Meal PlannerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Meal PlannerTests.modulemap"; sourceTree = "<group>"; };
+		71CA4AAD4B4A40F645C3C85EC7BBCC0D /* Pods-Meal PlannerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Meal PlannerTests-umbrella.h"; sourceTree = "<group>"; };
+		78FBAA320FFB9C68660FE99F6D57C260 /* Pods-Meal Planner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Meal Planner-dummy.m"; sourceTree = "<group>"; };
+		7A468228607F0B7A13FC94A2C1FF7B4A /* Pods-Meal Planner-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Meal Planner-Info.plist"; sourceTree = "<group>"; };
+		7BD011E7269F35102B6D973CBE03010B /* Pods_Meal_Planner_Meal_PlannerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meal_Planner_Meal_PlannerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		980F1B4B71743E75AAA659180E6B6E19 /* Pods-Meal PlannerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Meal PlannerTests-dummy.m"; sourceTree = "<group>"; };
+		983F74A2270FCB7EF94A3DA5115B4954 /* Pods-Meal Planner-Meal PlannerUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Meal Planner-Meal PlannerUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9A12CE198CC580C31F3F583BEF1F87CE /* Pods_Meal_Planner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meal_Planner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AA3414A8A692B6B0BF17FF469ED96645 /* Pods-Meal Planner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Meal Planner-umbrella.h"; sourceTree = "<group>"; };
+		AD1FADD7A89D4E57BCC2485641A4BDA0 /* Pods-Meal PlannerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Meal PlannerTests.release.xcconfig"; sourceTree = "<group>"; };
+		BA51BA0DAA3C22A87E9FCC37C576E823 /* Pods-Meal PlannerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Meal PlannerTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BDC699C4B1EAB4E6945CDFE3A84A5915 /* Pods-Meal PlannerTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Meal PlannerTests-Info.plist"; sourceTree = "<group>"; };
+		BEBF7C79EB622B39BC9A5A0911166C27 /* Pods-Meal Planner-Meal PlannerUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Meal Planner-Meal PlannerUITests-dummy.m"; sourceTree = "<group>"; };
+		CFDC783206AD2965FED8D63D527CA785 /* Pods-Meal Planner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Meal Planner.release.xcconfig"; sourceTree = "<group>"; };
+		DF2956B922E22F68DE76559294DE3985 /* Pods-Meal Planner-Meal PlannerUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Meal Planner-Meal PlannerUITests-umbrella.h"; sourceTree = "<group>"; };
+		E679B340345F4510B7706500A0F065C8 /* Pods-Meal Planner-Meal PlannerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Meal Planner-Meal PlannerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EAF75DD04AB89CFA1901CFF632EDE63B /* Pods-Meal PlannerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Meal PlannerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FD7B0C1B3FEF08CB633AABF15F000D19 /* Pods-Meal Planner-Meal PlannerUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Meal Planner-Meal PlannerUITests-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		097FF280A4C7C39D3D73757530A226DA /* Frameworks */ = {
+		198929EAF88E7F775F2EB73154F9F63F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		21FD9E7BBB66A866B6A6D285F4829D53 /* Frameworks */ = {
+		82BD04732884B914D1BC8E64646D04B4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				113AC76D766B53D9C0DBD31296A311E7 /* CoreText.framework in Frameworks */,
-				EF7CB81827162B2D467DF9211E188B64 /* Foundation.framework in Frameworks */,
-				9F3DD1AE3A09506146A0328B5E9140AE /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,181 +75,87 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5086314B1A0E95824DF25C5879FA1A92 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B6E77695DCA4276CAD17A60A89B34707 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F0C6014B4CCA104A53C6F5AEFC5C9760 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C574CAB87B085F36AE919D4C281728C1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A27A3A174F588EEADC58B7A5F739488A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
+		0E25CC9B84F5BD663069F1F653046719 /* Pods-Meal PlannerTests */ = {
 			isa = PBXGroup;
 			children = (
-				092FD875F565846165BF2D8B053941F7 /* iOS */,
+				7063F1E83CB7C4C7EC198F8A5AD485F8 /* Pods-Meal PlannerTests.modulemap */,
+				41201E44F3B9D9F4B4B003A3072F4A19 /* Pods-Meal PlannerTests-acknowledgements.markdown */,
+				BA51BA0DAA3C22A87E9FCC37C576E823 /* Pods-Meal PlannerTests-acknowledgements.plist */,
+				980F1B4B71743E75AAA659180E6B6E19 /* Pods-Meal PlannerTests-dummy.m */,
+				BDC699C4B1EAB4E6945CDFE3A84A5915 /* Pods-Meal PlannerTests-Info.plist */,
+				71CA4AAD4B4A40F645C3C85EC7BBCC0D /* Pods-Meal PlannerTests-umbrella.h */,
+				EAF75DD04AB89CFA1901CFF632EDE63B /* Pods-Meal PlannerTests.debug.xcconfig */,
+				AD1FADD7A89D4E57BCC2485641A4BDA0 /* Pods-Meal PlannerTests.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = "Pods-Meal PlannerTests";
+			path = "Target Support Files/Pods-Meal PlannerTests";
 			sourceTree = "<group>";
 		};
-		092FD875F565846165BF2D8B053941F7 /* iOS */ = {
+		3BDFF52C5DC22290E23343C7202DAF03 /* Pods-Meal Planner */ = {
 			isa = PBXGroup;
 			children = (
-				0C9A0B672B6CDCA33D84AB895D938167 /* CoreText.framework */,
-				23621862A99429490F9C983069F078BB /* Foundation.framework */,
-				032F67321D34EE01369F5810E71B7660 /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		3DD9634A65B5322671119E139B614716 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				889BEFE846FF661569FB436C50A33311 /* Pods-Meal Planner */,
-				408A140D6CC6D8C9ED566D7C98F470BB /* Pods-Meal Planner-Meal PlannerUITests */,
-				C07F204C8D5DF1614C4917BE0E50B29C /* Pods-Meal PlannerTests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		408A140D6CC6D8C9ED566D7C98F470BB /* Pods-Meal Planner-Meal PlannerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				0FFCAD7B309860CC61283EA8B7439C2F /* Pods-Meal Planner-Meal PlannerUITests.modulemap */,
-				EA2901ABE9D35D910259E58A192B5320 /* Pods-Meal Planner-Meal PlannerUITests-acknowledgements.markdown */,
-				5DD3706336EF2BBA808F91E53C0B264C /* Pods-Meal Planner-Meal PlannerUITests-acknowledgements.plist */,
-				2A089878225C5E77B439802C1AE47AE6 /* Pods-Meal Planner-Meal PlannerUITests-dummy.m */,
-				514A8B1544EA7E901AD94AABD19B2DF0 /* Pods-Meal Planner-Meal PlannerUITests-frameworks.sh */,
-				2AE823EDC9785DB84FD4ED38AB641F63 /* Pods-Meal Planner-Meal PlannerUITests-Info.plist */,
-				E7C202D52BEE5A4D828ECDBAFEAAF01E /* Pods-Meal Planner-Meal PlannerUITests-umbrella.h */,
-				0B19644DF4B1854C482827E179AC996B /* Pods-Meal Planner-Meal PlannerUITests.debug.xcconfig */,
-				12BEF1029CC8159C879E9D4B93381D47 /* Pods-Meal Planner-Meal PlannerUITests.release.xcconfig */,
-			);
-			name = "Pods-Meal Planner-Meal PlannerUITests";
-			path = "Target Support Files/Pods-Meal Planner-Meal PlannerUITests";
-			sourceTree = "<group>";
-		};
-		4411D1A566D8DBA08D1AA33610A83B4F /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				E4A719D8724FC76698CE337DA64F5E2F /* OpenSans-Bold.ttf */,
-				DF143BDFEDFF76CD88BA42231B5B01DD /* OpenSans-BoldItalic.ttf */,
-				780D27E1C2A09962E2FC880EC6A4A75B /* OpenSans-ExtraBold.ttf */,
-				33D67C47D5DFC4128CAC78EBB58803E1 /* OpenSans-ExtraBoldItalic.ttf */,
-				99F4C865624A99CDF8E6FC6CB3C07F7C /* OpenSans-Italic.ttf */,
-				4DA67A4033FF7E35DF37BB8AC882414E /* OpenSans-Light.ttf */,
-				B61456B60404A82DDDADEB18AE0B4B14 /* OpenSans-LightItalic.ttf */,
-				5D4965449230147B90C739404310B62C /* OpenSans-Regular.ttf */,
-				2B113FF889FE4F23B864B14E9E923627 /* OpenSans-Semibold.ttf */,
-				6FF7AEDFB6AF76F484E0368F72216B1C /* OpenSans-SemiboldItalic.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		889BEFE846FF661569FB436C50A33311 /* Pods-Meal Planner */ = {
-			isa = PBXGroup;
-			children = (
-				2FB89C6A5FF76CFD66D5CBFD62643B0F /* Pods-Meal Planner.modulemap */,
-				06D603A1AA1D16A1D93E6A91490F2F38 /* Pods-Meal Planner-acknowledgements.markdown */,
-				3E7318F79AD2DF52F1F04D8EF0C0FF8D /* Pods-Meal Planner-acknowledgements.plist */,
-				1C82540E439FA8814FAAFB7561366417 /* Pods-Meal Planner-dummy.m */,
-				5C457786D715DF4370F093C1F9B57C41 /* Pods-Meal Planner-frameworks.sh */,
-				00E1B072327D033E76F72F80D0EFBDB5 /* Pods-Meal Planner-Info.plist */,
-				0AF075ED16E9193F6F6E88F86ECA283F /* Pods-Meal Planner-umbrella.h */,
-				5DA85BC491EE1CA39C706D4B285DD0B2 /* Pods-Meal Planner.debug.xcconfig */,
-				C655D0688D6E2A0F26E97B1C85521B2D /* Pods-Meal Planner.release.xcconfig */,
+				47CA984B22CE233EE1795706DEBBC15C /* Pods-Meal Planner.modulemap */,
+				47B60223FBDD88D3C27FD706086D2C12 /* Pods-Meal Planner-acknowledgements.markdown */,
+				6B0C8640212B773CA04010F84ED24214 /* Pods-Meal Planner-acknowledgements.plist */,
+				78FBAA320FFB9C68660FE99F6D57C260 /* Pods-Meal Planner-dummy.m */,
+				7A468228607F0B7A13FC94A2C1FF7B4A /* Pods-Meal Planner-Info.plist */,
+				AA3414A8A692B6B0BF17FF469ED96645 /* Pods-Meal Planner-umbrella.h */,
+				48EC762AE8EC92DB1F9F8A43E32DC450 /* Pods-Meal Planner.debug.xcconfig */,
+				CFDC783206AD2965FED8D63D527CA785 /* Pods-Meal Planner.release.xcconfig */,
 			);
 			name = "Pods-Meal Planner";
 			path = "Target Support Files/Pods-Meal Planner";
 			sourceTree = "<group>";
 		};
-		AFEED029191369C7BF071CD868311013 /* Support Files */ = {
+		5E23183F6F7E1DC2888A7C6A20CEE233 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0C896D1108758E4AC453004D4805E1CA /* OpenSans.modulemap */,
-				807326EC306C57935FADEC9B9745FF70 /* OpenSans-dummy.m */,
-				4F14BEEE7D165786832B64C73B6D2D93 /* OpenSans-Info.plist */,
-				753D1612E577BB53BE3CD51F8C8C8F40 /* OpenSans-prefix.pch */,
-				FDE233E7F5A3DAE1C37B0C5AECF8A635 /* OpenSans-umbrella.h */,
-				C6AAA0553AFC234AD557E42A2E597027 /* OpenSans.debug.xcconfig */,
-				22A634AC7FE4C1E197660A54DD47E985 /* OpenSans.release.xcconfig */,
-				6FB0E3C1BB61764996EC7E53F7F2CC44 /* ResourceBundle-OpenSans-OpenSans-Info.plist */,
+				3BDFF52C5DC22290E23343C7202DAF03 /* Pods-Meal Planner */,
+				691A34CEE98ED9CFD7D7828A2F430BAE /* Pods-Meal Planner-Meal PlannerUITests */,
+				0E25CC9B84F5BD663069F1F653046719 /* Pods-Meal PlannerTests */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/OpenSans";
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		C07F204C8D5DF1614C4917BE0E50B29C /* Pods-Meal PlannerTests */ = {
+		66DB7EF5E705F848AC095D4C0C8D7214 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6FE79D30AD55E6174646F2A2F2674942 /* Pods-Meal PlannerTests.modulemap */,
-				1A8FC7A085C277510BD0C8881435A7EE /* Pods-Meal PlannerTests-acknowledgements.markdown */,
-				3A32741E5E84FD9A031E49ADE2BB4B23 /* Pods-Meal PlannerTests-acknowledgements.plist */,
-				91A78DE35349F06AED561D96A9B504F1 /* Pods-Meal PlannerTests-dummy.m */,
-				59A4BB09C2F9B6C2DCB683605B7AB836 /* Pods-Meal PlannerTests-Info.plist */,
-				9AC52FA372E480F70B1A9263C9E64297 /* Pods-Meal PlannerTests-umbrella.h */,
-				B733D6DD7ED8F5FCC04E796047B562BD /* Pods-Meal PlannerTests.debug.xcconfig */,
-				900714B6B736E7FD2BD37FC5CCBA2AF1 /* Pods-Meal PlannerTests.release.xcconfig */,
+				9A12CE198CC580C31F3F583BEF1F87CE /* Pods_Meal_Planner.framework */,
+				7BD011E7269F35102B6D973CBE03010B /* Pods_Meal_Planner_Meal_PlannerUITests.framework */,
+				6BB6E07763F88645130891C183D62179 /* Pods_Meal_PlannerTests.framework */,
 			);
-			name = "Pods-Meal PlannerTests";
-			path = "Target Support Files/Pods-Meal PlannerTests";
+			name = Products;
+			sourceTree = "<group>";
+		};
+		691A34CEE98ED9CFD7D7828A2F430BAE /* Pods-Meal Planner-Meal PlannerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				530B1363728F0CB21B64A4BC470A432F /* Pods-Meal Planner-Meal PlannerUITests.modulemap */,
+				5F57A89FFB6CE54C36BDD1AC867D929C /* Pods-Meal Planner-Meal PlannerUITests-acknowledgements.markdown */,
+				983F74A2270FCB7EF94A3DA5115B4954 /* Pods-Meal Planner-Meal PlannerUITests-acknowledgements.plist */,
+				BEBF7C79EB622B39BC9A5A0911166C27 /* Pods-Meal Planner-Meal PlannerUITests-dummy.m */,
+				FD7B0C1B3FEF08CB633AABF15F000D19 /* Pods-Meal Planner-Meal PlannerUITests-Info.plist */,
+				DF2956B922E22F68DE76559294DE3985 /* Pods-Meal Planner-Meal PlannerUITests-umbrella.h */,
+				46339E2302A4BE7BE95FEB5CBDA97777 /* Pods-Meal Planner-Meal PlannerUITests.debug.xcconfig */,
+				E679B340345F4510B7706500A0F065C8 /* Pods-Meal Planner-Meal PlannerUITests.release.xcconfig */,
+			);
+			name = "Pods-Meal Planner-Meal PlannerUITests";
+			path = "Target Support Files/Pods-Meal Planner-Meal PlannerUITests";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
-				DBD242521C9561012BCC70BDFE6BFA1C /* Pods */,
-				DDE24A6AA109F06B19BB8637CF635706 /* Products */,
-				3DD9634A65B5322671119E139B614716 /* Targets Support Files */,
+				66DB7EF5E705F848AC095D4C0C8D7214 /* Products */,
+				5E23183F6F7E1DC2888A7C6A20CEE233 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D8E7EA8943FD1B272B849BE8064A7818 /* OpenSans */ = {
-			isa = PBXGroup;
-			children = (
-				910F974CA3AA4EFC9760AD8C18D32400 /* UIFont+OpenSans.h */,
-				9F4DBF6FCD1205EE0DB09D29590B71E7 /* UIFont+OpenSans.m */,
-				4411D1A566D8DBA08D1AA33610A83B4F /* Resources */,
-				AFEED029191369C7BF071CD868311013 /* Support Files */,
-			);
-			name = OpenSans;
-			path = OpenSans;
-			sourceTree = "<group>";
-		};
-		DBD242521C9561012BCC70BDFE6BFA1C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D8E7EA8943FD1B272B849BE8064A7818 /* OpenSans */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		DDE24A6AA109F06B19BB8637CF635706 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				95244E634CD25D6FAFBE86E6504426B3 /* OpenSans.bundle */,
-				150D15DADFFB2DDD2AAA62A205133DFC /* OpenSans.framework */,
-				9A12CE198CC580C31F3F583BEF1F87CE /* Pods_Meal_Planner.framework */,
-				7BD011E7269F35102B6D973CBE03010B /* Pods_Meal_Planner_Meal_PlannerUITests.framework */,
-				6BB6E07763F88645130891C183D62179 /* Pods_Meal_PlannerTests.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,70 +169,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		25ABE1AA7F1942386238B7DA154AA614 /* Headers */ = {
+		5321082734CBEA3176ED6CCE7980D2CF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				746BF6F0E9915BAD339ACC9F23A9E360 /* Pods-Meal Planner-umbrella.h in Headers */,
+				0924449CB24BB38078FC7896E84AFCFB /* Pods-Meal Planner-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2C5C719418E8DB521E6ED108A31A49CE /* Headers */ = {
+		F565CCB72A5343F130AC2EB2156180CD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D91F5235A53EAD5852867F0C963CD3B3 /* Pods-Meal Planner-Meal PlannerUITests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		81C1E98F3012D155CB1035416E54C420 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7D47D38EDEC86C4E2306B1A10000D84A /* OpenSans-umbrella.h in Headers */,
-				009781CA6E7BC32D7FB3FC140AB80775 /* UIFont+OpenSans.h in Headers */,
+				8757030B6BEDE8B36500489228E09195 /* Pods-Meal Planner-Meal PlannerUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5D2C062A8FB1A5905A7A79E46FB5EC44 /* OpenSans */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 49FDA7DD3E4D1CF9570C9D948D27C9DF /* Build configuration list for PBXNativeTarget "OpenSans" */;
-			buildPhases = (
-				81C1E98F3012D155CB1035416E54C420 /* Headers */,
-				6BBA39955E4E496FBBF7F94003E39EFD /* Sources */,
-				21FD9E7BBB66A866B6A6D285F4829D53 /* Frameworks */,
-				D7B2FF0880294E919E0EF1B29274DE84 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				46818E2E666648700151786012DB1EF4 /* PBXTargetDependency */,
-			);
-			name = OpenSans;
-			productName = OpenSans;
-			productReference = 150D15DADFFB2DDD2AAA62A205133DFC /* OpenSans.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		866AA0434270D3C9C6572C4650E1A7A8 /* OpenSans-OpenSans */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8538ABFF7F2B1E1F3113AD3E3FCBFD83 /* Build configuration list for PBXNativeTarget "OpenSans-OpenSans" */;
-			buildPhases = (
-				2F18AF4B57C250B56CD84EA91D8E7D4D /* Sources */,
-				097FF280A4C7C39D3D73757530A226DA /* Frameworks */,
-				79EEC4A76F124935EDFBE97856489CBE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "OpenSans-OpenSans";
-			productName = "OpenSans-OpenSans";
-			productReference = 95244E634CD25D6FAFBE86E6504426B3 /* OpenSans.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
 		DE4C1463A25E52771B975534D2D8C709 /* Pods-Meal PlannerTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DAC9BF96B7978BA510EDF980565F125 /* Build configuration list for PBXNativeTarget "Pods-Meal PlannerTests" */;
@@ -420,17 +209,16 @@
 		};
 		EAC0B411690DC64F00292946302F3E03 /* Pods-Meal Planner-Meal PlannerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C72E2CE39ACED76EB676D8BD970AA192 /* Build configuration list for PBXNativeTarget "Pods-Meal Planner-Meal PlannerUITests" */;
+			buildConfigurationList = 543C0D442BDB7DD0E5468977129AF60D /* Build configuration list for PBXNativeTarget "Pods-Meal Planner-Meal PlannerUITests" */;
 			buildPhases = (
-				2C5C719418E8DB521E6ED108A31A49CE /* Headers */,
-				80F24A0DB9B627DA4CD9CB15EAB7A893 /* Sources */,
-				B6E77695DCA4276CAD17A60A89B34707 /* Frameworks */,
-				124935C795CF86FB8EA492863F0800E1 /* Resources */,
+				F565CCB72A5343F130AC2EB2156180CD /* Headers */,
+				3431B886654864771BC0BDEE4AE987F6 /* Sources */,
+				198929EAF88E7F775F2EB73154F9F63F /* Frameworks */,
+				F1DF876FFBD77C9EBC49BB00665F9C4B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9D70F5CC3B7CAE4CDC034CD00926471E /* PBXTargetDependency */,
 			);
 			name = "Pods-Meal Planner-Meal PlannerUITests";
 			productName = "Pods-Meal Planner-Meal PlannerUITests";
@@ -439,17 +227,16 @@
 		};
 		F7801C63E943D2B03014DE43A4079E51 /* Pods-Meal Planner */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC57D3E00AB92C65DD6538EE0DF662A0 /* Build configuration list for PBXNativeTarget "Pods-Meal Planner" */;
+			buildConfigurationList = 671860718032A9A01224A0D971721628 /* Build configuration list for PBXNativeTarget "Pods-Meal Planner" */;
 			buildPhases = (
-				25ABE1AA7F1942386238B7DA154AA614 /* Headers */,
-				B9D644F8A5FF2651E199B05BFCA3DA6E /* Sources */,
-				C574CAB87B085F36AE919D4C281728C1 /* Frameworks */,
-				F27D7AD32BADFA8E6F4E760C1FFFD585 /* Resources */,
+				5321082734CBEA3176ED6CCE7980D2CF /* Headers */,
+				AB02E6441EA24A4A5C7582115476C96E /* Sources */,
+				82BD04732884B914D1BC8E64646D04B4 /* Frameworks */,
+				79554483D1B7DFE7A6C90E9E2BE0329C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5C4B9614D9118E794ADE5C258E9826FB /* PBXTargetDependency */,
 			);
 			name = "Pods-Meal Planner";
 			productName = "Pods-Meal Planner";
@@ -474,12 +261,10 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = DDE24A6AA109F06B19BB8637CF635706 /* Products */;
+			productRefGroup = 66DB7EF5E705F848AC095D4C0C8D7214 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5D2C062A8FB1A5905A7A79E46FB5EC44 /* OpenSans */,
-				866AA0434270D3C9C6572C4650E1A7A8 /* OpenSans-OpenSans */,
 				F7801C63E943D2B03014DE43A4079E51 /* Pods-Meal Planner */,
 				EAC0B411690DC64F00292946302F3E03 /* Pods-Meal Planner-Meal PlannerUITests */,
 				DE4C1463A25E52771B975534D2D8C709 /* Pods-Meal PlannerTests */,
@@ -488,27 +273,10 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		124935C795CF86FB8EA492863F0800E1 /* Resources */ = {
+		79554483D1B7DFE7A6C90E9E2BE0329C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		79EEC4A76F124935EDFBE97856489CBE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				94D3D05A48E249B36C692AD9971FA9EC /* OpenSans-Bold.ttf in Resources */,
-				CCF62930907CD027DA165020A84DE820 /* OpenSans-BoldItalic.ttf in Resources */,
-				2A095CC044F5DCDA3C5192DA7433837D /* OpenSans-ExtraBold.ttf in Resources */,
-				61308B75B33681192C6B8B9C42B29E87 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
-				E9C6A60418B160420472FBBAC508275A /* OpenSans-Italic.ttf in Resources */,
-				BB474672C5BD1299846AE782ED74BDD4 /* OpenSans-Light.ttf in Resources */,
-				8FEE60780CD23A74AC5A6B47CD29C267 /* OpenSans-LightItalic.ttf in Resources */,
-				29BF1D78200B973510E6E6A2493FB18E /* OpenSans-Regular.ttf in Resources */,
-				8D3B04B8F9A3F071BFDDBEC74FF4BC8A /* OpenSans-Semibold.ttf in Resources */,
-				3041E5369BD43328371E34912439A97B /* OpenSans-SemiboldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,15 +287,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D7B2FF0880294E919E0EF1B29274DE84 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DC61BC9E848138C56E8C46FD3825D51C /* OpenSans.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F27D7AD32BADFA8E6F4E760C1FFFD585 /* Resources */ = {
+		F1DF876FFBD77C9EBC49BB00665F9C4B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -537,10 +297,11 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2F18AF4B57C250B56CD84EA91D8E7D4D /* Sources */ = {
+		3431B886654864771BC0BDEE4AE987F6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44FFEEC6D7E4554B3FECC93F8772235F /* Pods-Meal Planner-Meal PlannerUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,64 +313,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6BBA39955E4E496FBBF7F94003E39EFD /* Sources */ = {
+		AB02E6441EA24A4A5C7582115476C96E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75135D169EC04AD6107902A59DA2FFFF /* OpenSans-dummy.m in Sources */,
-				9FF953ED438FADE748954D8ACD8F6A77 /* UIFont+OpenSans.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		80F24A0DB9B627DA4CD9CB15EAB7A893 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				563E69E3CF8563C215606766AA2567DE /* Pods-Meal Planner-Meal PlannerUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B9D644F8A5FF2651E199B05BFCA3DA6E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F198827B75063B31CD0BB310A2D4EB77 /* Pods-Meal Planner-dummy.m in Sources */,
+				1D65E4F89CAAE48962F4BE1F02F2C18A /* Pods-Meal Planner-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		46818E2E666648700151786012DB1EF4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "OpenSans-OpenSans";
-			target = 866AA0434270D3C9C6572C4650E1A7A8 /* OpenSans-OpenSans */;
-			targetProxy = C55B8EE6A14176D7E208264A5C090744 /* PBXContainerItemProxy */;
-		};
-		5C4B9614D9118E794ADE5C258E9826FB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = OpenSans;
-			target = 5D2C062A8FB1A5905A7A79E46FB5EC44 /* OpenSans */;
-			targetProxy = 8E5B852E1F6ACAEC02A940C5EA1D1449 /* PBXContainerItemProxy */;
-		};
 		5D8604768EC35C93EBF7759E4D24F88A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Meal Planner";
 			target = F7801C63E943D2B03014DE43A4079E51 /* Pods-Meal Planner */;
 			targetProxy = F7ED077F08850201214187657113FDFC /* PBXContainerItemProxy */;
 		};
-		9D70F5CC3B7CAE4CDC034CD00926471E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = OpenSans;
-			target = 5D2C062A8FB1A5905A7A79E46FB5EC44 /* OpenSans */;
-			targetProxy = CCD82173B5BBA6E53465B69B97A194AD /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		37371CF68E5E32E3E212D59EAD5B1CBF /* Release */ = {
+		282527FB0A4EF54C92EC216962BA52A4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C655D0688D6E2A0F26E97B1C85521B2D /* Pods-Meal Planner.release.xcconfig */;
+			baseConfigurationReference = CFDC783206AD2965FED8D63D527CA785 /* Pods-Meal Planner.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -646,10 +372,12 @@
 			};
 			name = Release;
 		};
-		468F481981626EF01E15AA749843D039 /* Release */ = {
+		56CA48BED292DCF3D43F028268A050E5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22A634AC7FE4C1E197660A54DD47E985 /* OpenSans.release.xcconfig */;
+			baseConfigurationReference = E679B340345F4510B7706500A0F065C8 /* Pods-Meal Planner-Meal PlannerUITests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -659,22 +387,23 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/OpenSans/OpenSans-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/OpenSans/OpenSans-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Meal Planner-Meal PlannerUITests/Pods-Meal Planner-Meal PlannerUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/OpenSans/OpenSans.modulemap";
-				PRODUCT_MODULE_NAME = OpenSans;
-				PRODUCT_NAME = OpenSans;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Meal Planner-Meal PlannerUITests/Pods-Meal Planner-Meal PlannerUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -806,232 +535,9 @@
 			};
 			name = Release;
 		};
-		9C94E111864181281F2C0056E4178991 /* Debug */ = {
+		86FB575D16A0E6D4FA35461EEBF6D5C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B19644DF4B1854C482827E179AC996B /* Pods-Meal Planner-Meal PlannerUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Meal Planner-Meal PlannerUITests/Pods-Meal Planner-Meal PlannerUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Meal Planner-Meal PlannerUITests/Pods-Meal Planner-Meal PlannerUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		9E1DB630DBA246211963439F69662130 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 900714B6B736E7FD2BD37FC5CCBA2AF1 /* Pods-Meal PlannerTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Meal PlannerTests/Pods-Meal PlannerTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Meal PlannerTests/Pods-Meal PlannerTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9FA79DA3502105760983353B3902BDEF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12BEF1029CC8159C879E9D4B93381D47 /* Pods-Meal Planner-Meal PlannerUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Meal Planner-Meal PlannerUITests/Pods-Meal Planner-Meal PlannerUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Meal Planner-Meal PlannerUITests/Pods-Meal Planner-Meal PlannerUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A7D33589E42A27D67599613811956130 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6AAA0553AFC234AD557E42A2E597027 /* OpenSans.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/OpenSans/OpenSans-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/OpenSans/OpenSans-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/OpenSans/OpenSans.modulemap";
-				PRODUCT_MODULE_NAME = OpenSans;
-				PRODUCT_NAME = OpenSans;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		BED866D5590BFE8C81D28268946D28F5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6AAA0553AFC234AD557E42A2E597027 /* OpenSans.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/OpenSans";
-				IBSC_MODULE = OpenSans;
-				INFOPLIST_FILE = "Target Support Files/OpenSans/ResourceBundle-OpenSans-OpenSans-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = OpenSans;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		CCA2BD09A8E01FD45BD59F7C6628DE39 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22A634AC7FE4C1E197660A54DD47E985 /* OpenSans.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/OpenSans";
-				IBSC_MODULE = OpenSans;
-				INFOPLIST_FILE = "Target Support Files/OpenSans/ResourceBundle-OpenSans-OpenSans-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = OpenSans;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		D4F53224F94E93B1501458825854832B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B733D6DD7ED8F5FCC04E796047B562BD /* Pods-Meal PlannerTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Meal PlannerTests/Pods-Meal PlannerTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Meal PlannerTests/Pods-Meal PlannerTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D807AC3379262EEA037B96E108301E81 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5DA85BC491EE1CA39C706D4B285DD0B2 /* Pods-Meal Planner.debug.xcconfig */;
+			baseConfigurationReference = 48EC762AE8EC92DB1F9F8A43E32DC450 /* Pods-Meal Planner.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1067,6 +573,121 @@
 			};
 			name = Debug;
 		};
+		9E1DB630DBA246211963439F69662130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD1FADD7A89D4E57BCC2485641A4BDA0 /* Pods-Meal PlannerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Meal PlannerTests/Pods-Meal PlannerTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Meal PlannerTests/Pods-Meal PlannerTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D4F53224F94E93B1501458825854832B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAF75DD04AB89CFA1901CFF632EDE63B /* Pods-Meal PlannerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Meal PlannerTests/Pods-Meal PlannerTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Meal PlannerTests/Pods-Meal PlannerTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E21323905C83C77B43B8B765776C8D72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46339E2302A4BE7BE95FEB5CBDA97777 /* Pods-Meal Planner-Meal PlannerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Meal Planner-Meal PlannerUITests/Pods-Meal Planner-Meal PlannerUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Meal Planner-Meal PlannerUITests/Pods-Meal Planner-Meal PlannerUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1088,38 +709,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		49FDA7DD3E4D1CF9570C9D948D27C9DF /* Build configuration list for PBXNativeTarget "OpenSans" */ = {
+		543C0D442BDB7DD0E5468977129AF60D /* Build configuration list for PBXNativeTarget "Pods-Meal Planner-Meal PlannerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A7D33589E42A27D67599613811956130 /* Debug */,
-				468F481981626EF01E15AA749843D039 /* Release */,
+				E21323905C83C77B43B8B765776C8D72 /* Debug */,
+				56CA48BED292DCF3D43F028268A050E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8538ABFF7F2B1E1F3113AD3E3FCBFD83 /* Build configuration list for PBXNativeTarget "OpenSans-OpenSans" */ = {
+		671860718032A9A01224A0D971721628 /* Build configuration list for PBXNativeTarget "Pods-Meal Planner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BED866D5590BFE8C81D28268946D28F5 /* Debug */,
-				CCA2BD09A8E01FD45BD59F7C6628DE39 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C72E2CE39ACED76EB676D8BD970AA192 /* Build configuration list for PBXNativeTarget "Pods-Meal Planner-Meal PlannerUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9C94E111864181281F2C0056E4178991 /* Debug */,
-				9FA79DA3502105760983353B3902BDEF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DC57D3E00AB92C65DD6538EE0DF662A0 /* Build configuration list for PBXNativeTarget "Pods-Meal Planner" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D807AC3379262EEA037B96E108301E81 /* Debug */,
-				37371CF68E5E32E3E212D59EAD5B1CBF /* Release */,
+				86FB575D16A0E6D4FA35461EEBF6D5C8 /* Debug */,
+				282527FB0A4EF54C92EC216962BA52A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

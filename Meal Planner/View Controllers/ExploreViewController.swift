@@ -10,6 +10,34 @@ import UIKit
 
 class ExploreViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
+    // MARK: - Outlets
+    @IBOutlet var recommendedCollectionView: UICollectionView!
+    @IBOutlet var searchforRecipe: UITextField!
+    @IBOutlet weak var TitleLabel: UILabel!
+    
+    // MARK: - Actions
+    @IBAction func popularButtonPressed(_ sender: UIButton) {
+    }
+    @IBAction func vegetarianButtonpressed(_ sender: Any) {
+    }
+    @IBAction func balancedButtonPressed(_ sender: Any) {
+    }
+    @IBAction func lowcarbButtonPressed(_ sender: Any) {
+    }
+    
+    // MARK: - Methods
+    override func viewDidLoad() {
+        defer {
+            super.viewDidLoad()
+            recommendedCollectionView.delegate = self
+            recommendedCollectionView.dataSource = self
+            print(exploreData.recipeList)
+        }
+        
+        exploreData.refresh()
+        
+        // Do any additional setup after loading the view.
+    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return exploreData.recipeList.count
@@ -59,32 +87,7 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate, UIColle
         }
     }
     
-    //OUTLETS
-    @IBOutlet var recommendedCollectionView: UICollectionView!
-    @IBOutlet var searchforRecipe: UITextField!
-    //ACTIONS
-    @IBAction func popularButtonPressed(_ sender: UIButton) {
-    }
-    @IBAction func vegetarianButtonpressed(_ sender: Any) {
-    }
-    @IBAction func balancedButtonPressed(_ sender: Any) {
-    }
-    @IBAction func lowcarbButtonPressed(_ sender: Any) {
-    }
     
-    override func viewDidLoad() {
-    
-        defer {
-            super.viewDidLoad()
-            recommendedCollectionView.delegate = self
-            recommendedCollectionView.dataSource = self
-            print(exploreData.recipeList)
-        }
-        
-        exploreData.refresh()
-        
-        // Do any additional setup after loading the view.
-    }
 
 
 }

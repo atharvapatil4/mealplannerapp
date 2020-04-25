@@ -6,7 +6,6 @@ target 'Meal Planner' do
   use_frameworks!
 
   # Pods for Meal Planner
-pod 'OpenSans'
   target 'Meal PlannerTests' do
     inherit! :search_paths
     # Pods for testing
