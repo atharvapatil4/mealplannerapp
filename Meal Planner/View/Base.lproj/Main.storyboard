@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8yi-6f-1SJ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -251,17 +251,6 @@
                                     <action selector="backButtonPressed:" destination="V2b-j3-zew" eventType="touchUpInside" id="Sxm-i6-ann"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IwR-d2-DaN">
-                                <rect key="frame" x="174" y="174" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recipe Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B8O-Yr-eKF">
-                                <rect key="frame" x="156" y="93" width="126" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Preparation TIme" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPf-BW-wiN">
                                 <rect key="frame" x="20" y="195" width="132" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -312,8 +301,15 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="dSO-gE-wqf"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="gBT-dA-YNM"/>
                             </scrollView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zQa-El-F5f">
-                                <rect key="frame" x="174" y="170" width="240" height="128"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recipe Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPC-6i-mvt">
+                                <rect key="frame" x="161" y="104" width="102" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1PI-yx-Fci">
+                                <rect key="frame" x="161" y="154" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -328,9 +324,8 @@
                         <outlet property="ingredientsBodyLabel" destination="grh-pd-rla" id="jbb-T3-cZb"/>
                         <outlet property="ingredientsLabel" destination="vg6-I7-7AU" id="aEb-JW-mwI"/>
                         <outlet property="preparationTimeLabel" destination="XPf-BW-wiN" id="n1k-bf-wVp"/>
-                        <outlet property="recipeImage" destination="zQa-El-F5f" id="8CD-NM-fwD"/>
-                        <outlet property="recipeImagine" destination="IwR-d2-DaN" id="bAn-M3-KNL"/>
-                        <outlet property="recipeNameLabel" destination="B8O-Yr-eKF" id="jY9-6l-yRB"/>
+                        <outlet property="recipeImage" destination="1PI-yx-Fci" id="YXT-bY-hM6"/>
+                        <outlet property="recipeNameLabel" destination="aPC-6i-mvt" id="uIA-sy-HnU"/>
                         <segue destination="0FV-PR-YxF" kind="show" identifier="recipeExpandedToExplore" id="wp6-pA-oSz"/>
                     </connections>
                 </viewController>
@@ -340,7 +335,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="FyE-eP-7s8"/>
+        <segue reference="wp6-pA-oSz"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>

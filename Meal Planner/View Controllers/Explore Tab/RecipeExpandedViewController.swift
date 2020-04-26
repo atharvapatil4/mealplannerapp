@@ -16,6 +16,7 @@ class RecipeExpandedViewController: UIViewController {
     var chosenRecipe: Recipe!
     
     // MARK: - IBOutlets
+   
     @IBOutlet var recipeNameLabel: UILabel!
     @IBOutlet var preparationTimeLabel: UILabel!
     @IBOutlet var calorieLabel: UILabel!
