@@ -161,7 +161,7 @@
                         <outlet property="TitleLabel" destination="kDG-Vl-oYy" id="e3n-x1-TFg"/>
                         <outlet property="recommendedCollectionView" destination="y1O-RG-TCd" id="DkJ-rA-mR1"/>
                         <outlet property="searchforRecipe" destination="EyO-SV-FEz" id="RVj-b3-Syi"/>
-                        <segue destination="V2b-j3-zew" kind="presentation" identifier="exploreToRecipeExpanded" modalPresentationStyle="fullScreen" id="uRQ-M8-FDX"/>
+                        <segue destination="V2b-j3-zew" kind="presentation" identifier="exploreToRecipeExpanded" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="uRQ-M8-FDX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7yK-W4-lro" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -251,53 +251,58 @@
                                     <action selector="backButtonPressed:" destination="V2b-j3-zew" eventType="touchUpInside" id="Sxm-i6-ann"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Preparation TIme" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPf-BW-wiN">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Preparation TIme" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPf-BW-wiN">
                                 <rect key="frame" x="20" y="195" width="132" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ede-py-DK5">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calories" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ede-py-DK5">
                                 <rect key="frame" x="55" y="224" width="63" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ylN-K5-Akm">
-                                <rect key="frame" x="17" y="339" width="380" height="448"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ylN-K5-Akm">
+                                <rect key="frame" x="17" y="339" width="380" height="496"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingredients" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vg6-I7-7AU">
-                                        <rect key="frame" x="61" y="43" width="116" height="29"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Ingredients" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vg6-I7-7AU">
+                                        <rect key="frame" x="8" y="8" width="116" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Directions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAP-nB-dgZ">
-                                        <rect key="frame" x="61" y="169" width="101" height="28"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Directions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAP-nB-dgZ">
+                                        <rect key="frame" x="16" y="141" width="101" height="28"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUf-vb-RZD">
-                                        <rect key="frame" x="61" y="274" width="42" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUf-vb-RZD">
+                                        <rect key="frame" x="16" y="188" width="215" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grh-pd-rla">
-                                        <rect key="frame" x="61" y="101" width="42" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grh-pd-rla">
+                                        <rect key="frame" x="10" y="57" width="42" height="20.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" id="g3a-gk-rSc"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="grh-pd-rla" firstAttribute="leading" secondItem="ylN-K5-Akm" secondAttribute="leading" constant="10" id="8Rz-Ug-Dih"/>
+                                    <constraint firstItem="kAP-nB-dgZ" firstAttribute="firstBaseline" secondItem="grh-pd-rla" secondAttribute="baseline" constant="28" symbolType="layoutAnchor" id="JY1-dy-R6q"/>
+                                    <constraint firstAttribute="trailing" secondItem="grh-pd-rla" secondAttribute="trailing" constant="10" id="WAt-b4-apW"/>
+                                    <constraint firstItem="gUf-vb-RZD" firstAttribute="top" secondItem="kAP-nB-dgZ" secondAttribute="bottom" constant="19" id="ije-Lx-0Sx"/>
+                                    <constraint firstItem="grh-pd-rla" firstAttribute="top" secondItem="vg6-I7-7AU" secondAttribute="bottom" constant="20" id="m7D-In-1Gt"/>
+                                </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="dSO-gE-wqf"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="gBT-dA-YNM"/>
                             </scrollView>
@@ -326,12 +331,12 @@
                         <outlet property="preparationTimeLabel" destination="XPf-BW-wiN" id="n1k-bf-wVp"/>
                         <outlet property="recipeImage" destination="1PI-yx-Fci" id="YXT-bY-hM6"/>
                         <outlet property="recipeNameLabel" destination="aPC-6i-mvt" id="uIA-sy-HnU"/>
-                        <segue destination="0FV-PR-YxF" kind="presentation" identifier="recipeExpandedToExplore" modalPresentationStyle="fullScreen" id="wp6-pA-oSz"/>
+                        <segue destination="0FV-PR-YxF" kind="presentation" identifier="recipeExpandedToExplore" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="wp6-pA-oSz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="owI-DR-4HQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="200" y="-845"/>
+            <point key="canvasLocation" x="200.00000000000003" y="-845.08928571428567"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

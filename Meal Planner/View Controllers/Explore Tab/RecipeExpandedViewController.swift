@@ -35,6 +35,25 @@ class RecipeExpandedViewController: UIViewController {
         super.viewDidLoad()
         recipeNameLabel.text = chosenRecipe?.name
         recipeImage.image = chosenRecipe?.picture
+        guard let preptime = chosenRecipe.dict["readyInMinutes"] as? Int else {return}
+        preparationTimeLabel.text = String(preptime) + " minutes"
+        
+        guard let extendedIngredients = chosenRecipe.dict["extendedIngredients"] as? [[String:Any]] else {return}
+        ingredientsBodyLabel.preferredMaxLayoutWidth = 150
+        for (ingredientDict) in extendedIngredients {
+            //ingredientsBodyLabel.text = ""
+            guard let amt = ingredientDict["amount"] as? Int else {return}
+            guard let unit = ingredientDict["unit"] as? String else {return}
+            guard let ingredientName = ingredientDict["name"] as? String else {return}
+            let ingredient = String(amt) + " " + unit + " " + ingredientName
+            let unwrapped = ingredientsBodyLabel.text  ?? ""
+            ingredientsBodyLabel.text = unwrapped + "\(ingredient) "
+            print(ingredient)
+        }
+        //ingredientsBodyLabel.sizeToFit()
+        directionsBodyLabel.text = chosenRecipe.dict["instructions"] as? String
+        print(directionsBodyLabel.text)
+       //directionsBodyLabel.sizeToFit()
     }
     
 }
