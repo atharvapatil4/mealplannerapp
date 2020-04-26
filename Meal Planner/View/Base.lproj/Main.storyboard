@@ -46,7 +46,7 @@
             <objects>
                 <viewController id="0FV-PR-YxF" customClass="ExploreViewController" customModule="Meal_Planner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AIl-w0-rHm">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search recipes by name, ingredient, etc." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EyO-SV-FEz">
@@ -161,7 +161,7 @@
                         <outlet property="TitleLabel" destination="kDG-Vl-oYy" id="e3n-x1-TFg"/>
                         <outlet property="recommendedCollectionView" destination="y1O-RG-TCd" id="DkJ-rA-mR1"/>
                         <outlet property="searchforRecipe" destination="EyO-SV-FEz" id="RVj-b3-Syi"/>
-                        <segue destination="V2b-j3-zew" kind="showDetail" identifier="exploreToRecipeExpanded" id="uRQ-M8-FDX"/>
+                        <segue destination="V2b-j3-zew" kind="presentation" identifier="exploreToRecipeExpanded" modalPresentationStyle="fullScreen" id="uRQ-M8-FDX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7yK-W4-lro" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -240,7 +240,7 @@
             <objects>
                 <viewController id="V2b-j3-zew" customClass="RecipeExpandedViewController" customModule="Meal_Planner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cYY-Jr-m1p">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZg-VM-6xI">
@@ -326,7 +326,7 @@
                         <outlet property="preparationTimeLabel" destination="XPf-BW-wiN" id="n1k-bf-wVp"/>
                         <outlet property="recipeImage" destination="1PI-yx-Fci" id="YXT-bY-hM6"/>
                         <outlet property="recipeNameLabel" destination="aPC-6i-mvt" id="uIA-sy-HnU"/>
-                        <segue destination="0FV-PR-YxF" kind="show" identifier="recipeExpandedToExplore" id="wp6-pA-oSz"/>
+                        <segue destination="0FV-PR-YxF" kind="presentation" identifier="recipeExpandedToExplore" modalPresentationStyle="fullScreen" id="wp6-pA-oSz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="owI-DR-4HQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
