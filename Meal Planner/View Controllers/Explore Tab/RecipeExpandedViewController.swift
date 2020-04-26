@@ -40,18 +40,49 @@ class RecipeExpandedViewController: UIViewController {
         
         guard let extendedIngredients = chosenRecipe.dict["extendedIngredients"] as? [[String:Any]] else {return}
         ingredientsBodyLabel.preferredMaxLayoutWidth = 150
+        ingredientsBodyLabel.numberOfLines = 0
+        ingredientsBodyLabel.text = ""
+        print(extendedIngredients.count)
         for (ingredientDict) in extendedIngredients {
             //ingredientsBodyLabel.text = ""
-            guard let amt = ingredientDict["amount"] as? Int else {return}
-            guard let unit = ingredientDict["unit"] as? String else {return}
-            guard let ingredientName = ingredientDict["name"] as? String else {return}
-            let ingredient = String(amt) + " " + unit + " " + ingredientName
+            var amt = 0
+            var unit = ""
+            var name = ""
+            if let currAmount = ingredientDict["amount"] as? Int {
+                amt=currAmount
+            }
+            if let currUnit = ingredientDict["unit"] as? String {
+                unit = currUnit
+            }
+            if let ingredientName = ingredientDict["name"] as? String {
+                name = ingredientName
+            }
+            var ingredient = String(amt) + " " + unit + " " + name
+            if (amt == 0) {
+                ingredient = name
+            }
             let unwrapped = ingredientsBodyLabel.text  ?? ""
-            ingredientsBodyLabel.text = unwrapped + "\(ingredient) "
+            ingredientsBodyLabel.text = unwrapped + "\n - \(ingredient) "
             print(ingredient)
         }
         //ingredientsBodyLabel.sizeToFit()
-        directionsBodyLabel.text = chosenRecipe.dict["instructions"] as? String
+        directionsBodyLabel.numberOfLines = 0
+        directionsBodyLabel.text = ""
+        let analyzedInstructions = chosenRecipe.dict["analyzedInstructions"] as? [[String:Any]]
+        guard let steps = analyzedInstructions![0]["steps"] as? [[String:Any]] else {return}
+        for (step) in steps {
+            var number = ""
+            var body = ""
+            if let stepNumber = step["number"] as? Int {
+                number = String(stepNumber) + ". "
+            }
+            if let stepBody = step["step"] as? String {
+                body = stepBody
+            }
+            let stepMessage = number + body
+            let unwrapped = directionsBodyLabel.text  ?? ""
+            directionsBodyLabel.text = unwrapped + stepMessage + "\n"
+        }
         print(directionsBodyLabel.text)
        //directionsBodyLabel.sizeToFit()
     }
