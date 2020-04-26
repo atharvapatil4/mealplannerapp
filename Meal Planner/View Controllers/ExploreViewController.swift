@@ -32,7 +32,6 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate, UIColle
             super.viewDidLoad()
             recommendedCollectionView.delegate = self
             recommendedCollectionView.dataSource = self
-            print(exploreData.recipeList)
         }
         
         exploreData.refresh()
@@ -55,7 +54,6 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate, UIColle
             cell.recipeImageView.contentMode = UIView.ContentMode.scaleAspectFill
             cell.layer.cornerRadius = 5.0
             cell.layer.masksToBounds = true
-            print("finished cell")
             return cell
         } else {
             print("finished blank cell")

@@ -330,6 +330,7 @@
                         <outlet property="preparationTimeLabel" destination="XPf-BW-wiN" id="n1k-bf-wVp"/>
                         <outlet property="recipeImage" destination="1PI-yx-Fci" id="YXT-bY-hM6"/>
                         <outlet property="recipeNameLabel" destination="aPC-6i-mvt" id="uIA-sy-HnU"/>
+                        <outlet property="scrollView" destination="ylN-K5-Akm" id="FGt-uC-5vC"/>
                         <segue destination="0FV-PR-YxF" kind="presentation" identifier="recipeExpandedToExplore" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="wp6-pA-oSz"/>
                     </connections>
                 </viewController>

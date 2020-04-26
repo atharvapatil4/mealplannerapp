@@ -16,7 +16,8 @@ class RecipeExpandedViewController: UIViewController {
     var chosenRecipe: Recipe!
     
     // MARK: - IBOutlets
-   
+    @IBOutlet var scrollView: UIScrollView!
+    
     @IBOutlet var recipeNameLabel: UILabel!
     @IBOutlet var preparationTimeLabel: UILabel!
     @IBOutlet var calorieLabel: UILabel!
@@ -31,6 +32,9 @@ class RecipeExpandedViewController: UIViewController {
         performSegue(withIdentifier: "recipeExpandedToExplore", sender: sender)
     }
     
+    override func viewDidLayoutSubviews() {
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         recipeNameLabel.text = chosenRecipe?.name
@@ -39,8 +43,8 @@ class RecipeExpandedViewController: UIViewController {
         preparationTimeLabel.text = String(preptime) + " minutes"
         
         guard let extendedIngredients = chosenRecipe.dict["extendedIngredients"] as? [[String:Any]] else {return}
-        ingredientsBodyLabel.preferredMaxLayoutWidth = 150
         ingredientsBodyLabel.numberOfLines = 0
+        ingredientsBodyLabel.preferredMaxLayoutWidth = 400
         ingredientsBodyLabel.text = ""
         print(extendedIngredients.count)
         for (ingredientDict) in extendedIngredients {
@@ -67,6 +71,7 @@ class RecipeExpandedViewController: UIViewController {
         }
         //ingredientsBodyLabel.sizeToFit()
         directionsBodyLabel.numberOfLines = 0
+        directionsBodyLabel.preferredMaxLayoutWidth = 400
         directionsBodyLabel.text = ""
         let analyzedInstructions = chosenRecipe.dict["analyzedInstructions"] as? [[String:Any]]
         guard let steps = analyzedInstructions![0]["steps"] as? [[String:Any]] else {return}

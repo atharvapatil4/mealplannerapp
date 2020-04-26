@@ -61,23 +61,16 @@ public class ExploreData {
     func refresh() {
 //        defer {
 //
-//        }
-        print("here0")
+//
         guard let url = URL(string: urlString) else { fatalError("Error getting url") }
-        print("here0.5")
+    
         let sesh = URLSession.shared.dataTask(with: url) {(data, response, err) in
-            print("here0.75")
             guard let recipeData = data else {return}
-            print("here1")
             let json = try? JSONSerialization.jsonObject(with: recipeData, options: [])
-            print("here2")
             guard let dictionary = json as? [String: Any] else {return}
-            print("here3")
             //recipes -> id title image
             guard let recipes = dictionary["recipes"] as? [[String:Any]] else {return}
-            print("here4")
             for (recipe) in recipes {
-                print("here5")
                 DispatchQueue.main.async {
                     
                     guard let id =  recipe["id"] as? Int else {return}
