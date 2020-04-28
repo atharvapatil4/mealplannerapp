@@ -11,25 +11,70 @@
         <!--Item 2-->
         <scene sceneID="EnM-0P-zxg">
             <objects>
-                <viewController id="Bd0-Mh-ehJ" sceneMemberID="viewController">
+                <viewController id="Bd0-Mh-ehJ" customClass="BookmarksViewController" customModule="Meal_Planner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YRz-L9-waU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Bookmarks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eY-eW-QuU">
+                                <rect key="frame" x="37" y="119" width="219" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wv6-bi-YY7">
+                                <rect key="frame" x="20" y="178" width="384" height="609"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="bookmarkCell" rowHeight="181" id="N6S-AP-Z9t" customClass="BookmarkTableViewCell" customModule="Meal_Planner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="384" height="181"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="N6S-AP-Z9t" id="vuJ-kc-oUZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="384" height="181"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Sp-4N-Cq2">
+                                                    <rect key="frame" x="0.0" y="11" width="240" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebd-J1-qBH">
+                                                    <rect key="frame" x="281" y="11" width="42" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="recipeImageView" destination="8Sp-4N-Cq2" id="ymI-t1-t7w"/>
+                                            <outlet property="recipeLabel" destination="ebd-J1-qBH" id="yFo-Mq-fsq"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="cC4-ON-lgm"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="moe-9a-UGu"/>
+                    <connections>
+                        <outlet property="bookmarksTableView" destination="wv6-bi-YY7" id="3gI-z3-0Rx"/>
+                        <segue destination="V2b-j3-zew" kind="presentation" identifier="bookmarksToRecipeExpanded" modalPresentationStyle="fullScreen" id="X6U-o4-Yq4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rPz-5G-uQs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-879" y="-177"/>
+            <point key="canvasLocation" x="-820" y="-144"/>
         </scene>
         <!--Item 3-->
         <scene sceneID="h9g-ia-HFV">
             <objects>
                 <viewController id="AXX-qw-g9O" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Yq-TC-epR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="IYG-gj-1sC"/>
@@ -193,7 +238,7 @@
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="Vro-Nw-oqf" id="2YP-KA-Gly"/>
-                        <segue destination="8yi-6f-1SJ" kind="show" identifier="doneLoading" id="AlO-aH-Oh9"/>
+                        <segue destination="8yi-6f-1SJ" kind="presentation" identifier="doneLoading" modalPresentationStyle="fullScreen" id="AlO-aH-Oh9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DLc-xV-s16" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -340,11 +385,12 @@
                         <outlet property="recipeNameLabel" destination="aPC-6i-mvt" id="uIA-sy-HnU"/>
                         <outlet property="scrollView" destination="ylN-K5-Akm" id="FGt-uC-5vC"/>
                         <segue destination="0FV-PR-YxF" kind="presentation" identifier="recipeExpandedToExplore" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="wp6-pA-oSz"/>
+                        <segue destination="Bd0-Mh-ehJ" kind="presentation" identifier="recipeExpandedToBookmarks" modalPresentationStyle="fullScreen" id="bld-gM-B8C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="owI-DR-4HQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="200.00000000000003" y="-845.08928571428567"/>
+            <point key="canvasLocation" x="274" y="-818"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="jVc-vb-B36">
@@ -363,7 +409,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="X6U-o4-Yq4"/>
         <segue reference="wp6-pA-oSz"/>
+        <segue reference="bld-gM-B8C"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>

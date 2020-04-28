@@ -32,7 +32,8 @@ class RecipeExpandedViewController: UIViewController {
         performSegue(withIdentifier: "recipeExpandedToExplore", sender: sender)
     }
     @IBAction func bookmarkButtonPressed(_ sender: UIButton) {
-        
+        user.addBookmark(recipe: chosenRecipe)
+        performSegue(withIdentifier: "recipeExpandedToBookmarks", sender: sender)
     }
     
     override func viewDidLayoutSubviews() {

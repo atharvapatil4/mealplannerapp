@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,6 +23,9 @@
 		45A25EE0244FD0D60094B6BA /* Meal_PlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A25EDF244FD0D60094B6BA /* Meal_PlannerTests.swift */; };
 		45A25EEB244FD0D60094B6BA /* Meal_PlannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A25EEA244FD0D60094B6BA /* Meal_PlannerUITests.swift */; };
 		45D657792457C20F00DD2F19 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 45D657782457C20F00DD2F19 /* GoogleService-Info.plist */; };
+		45D6577B2457C4DA00DD2F19 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D6577A2457C4DA00DD2F19 /* UserData.swift */; };
+		45D6577E2457CFC200DD2F19 /* BookmarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D6577D2457CFC200DD2F19 /* BookmarksViewController.swift */; };
+		45D657802457D06400DD2F19 /* BookmarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D6577F2457D06400DD2F19 /* BookmarkTableViewCell.swift */; };
 		64A7DC30C9C2E1E769593F57 /* Pods_Meal_Planner_Meal_PlannerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F95B5DC8D02B50E71F6301B7 /* Pods_Meal_Planner_Meal_PlannerUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +69,9 @@
 		45A25EEA244FD0D60094B6BA /* Meal_PlannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal_PlannerUITests.swift; sourceTree = "<group>"; };
 		45A25EEC244FD0D60094B6BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45D657782457C20F00DD2F19 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		45D6577A2457C4DA00DD2F19 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		45D6577D2457CFC200DD2F19 /* BookmarksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksViewController.swift; sourceTree = "<group>"; };
+		45D6577F2457D06400DD2F19 /* BookmarkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkTableViewCell.swift; sourceTree = "<group>"; };
 		48AE2B9081494059513D5596 /* Pods-Meal Planner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meal Planner.debug.xcconfig"; path = "Target Support Files/Pods-Meal Planner/Pods-Meal Planner.debug.xcconfig"; sourceTree = "<group>"; };
 		4D8D360EAF515542E3FA4115 /* Pods-Meal PlannerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meal PlannerTests.release.xcconfig"; path = "Target Support Files/Pods-Meal PlannerTests/Pods-Meal PlannerTests.release.xcconfig"; sourceTree = "<group>"; };
 		6014118BFB764EF629F3737D /* Pods_Meal_Planner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meal_Planner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				4586018C244FE8E500E4AE3A /* ExploreData.swift */,
+				45D6577A2457C4DA00DD2F19 /* UserData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -173,6 +180,7 @@
 				45A25ECE244FD0D30094B6BA /* Main.storyboard */,
 				4586018A244FDFFF00E4AE3A /* RecommendedCollectionViewCell.swift */,
 				4596B9CF2451718100DCB298 /* InformationTableViewCell.swift */,
+				45D6577F2457D06400DD2F19 /* BookmarkTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -180,6 +188,7 @@
 		45A25EFA244FD27A0094B6BA /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				45D6577C2457CFA800DD2F19 /* Bookmarks Tab */,
 				45690814245283F600D86F4A /* LoadingViewController.swift */,
 				45A25EFB244FD2E20094B6BA /* Explore Tab */,
 			);
@@ -193,6 +202,14 @@
 				4596B9CD24516F2900DCB298 /* RecipeExpandedViewController.swift */,
 			);
 			path = "Explore Tab";
+			sourceTree = "<group>";
+		};
+		45D6577C2457CFA800DD2F19 /* Bookmarks Tab */ = {
+			isa = PBXGroup;
+			children = (
+				45D6577D2457CFC200DD2F19 /* BookmarksViewController.swift */,
+			);
+			path = "Bookmarks Tab";
 			sourceTree = "<group>";
 		};
 		80D0133EB3DB034025E5B9AA /* Pods */ = {
@@ -458,9 +475,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45D6577E2457CFC200DD2F19 /* BookmarksViewController.swift in Sources */,
 				4586018B244FDFFF00E4AE3A /* RecommendedCollectionViewCell.swift in Sources */,
 				4596B9CE24516F2900DCB298 /* RecipeExpandedViewController.swift in Sources */,
 				45A25ECD244FD0D30094B6BA /* ExploreViewController.swift in Sources */,
+				45D657802457D06400DD2F19 /* BookmarkTableViewCell.swift in Sources */,
+				45D6577B2457C4DA00DD2F19 /* UserData.swift in Sources */,
 				45690815245283F600D86F4A /* LoadingViewController.swift in Sources */,
 				4586018D244FE8E500E4AE3A /* ExploreData.swift in Sources */,
 				45A25EC9244FD0D30094B6BA /* AppDelegate.swift in Sources */,

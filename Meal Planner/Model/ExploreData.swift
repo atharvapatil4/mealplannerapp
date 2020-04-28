@@ -71,8 +71,11 @@ public class ExploreData {
             //recipes -> id title image
             guard let recipes = dictionary["recipes"] as? [[String:Any]] else {return}
             for (recipe) in recipes {
-                DispatchQueue.main.async {
-                    
+                    if let instructions = recipe["analyzedInstructions"] as? [[String:Any]] {
+                        if (instructions.isEmpty) {
+                            continue
+                        }
+                    }
                     guard let id =  recipe["id"] as? Int else {return}
                     guard let img = recipe["image"] as? String else {return}
                     guard let title = recipe["title"] as? String else {return}
@@ -85,7 +88,6 @@ public class ExploreData {
                         let toAdd = Recipe(name: title, picture: realImage, id: id, imgType: imgType, dict: recipe)
                         self.recipeList.append(toAdd)
                     }
-                }
                 
             }
             self.finishedLoading = true
