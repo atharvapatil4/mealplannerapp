@@ -31,6 +31,9 @@ class RecipeExpandedViewController: UIViewController {
     @IBAction func backButtonPressed(_ sender: UIButton) {
         performSegue(withIdentifier: "recipeExpandedToExplore", sender: sender)
     }
+    @IBAction func bookmarkButtonPressed(_ sender: UIButton) {
+        
+    }
     
     override func viewDidLayoutSubviews() {
         

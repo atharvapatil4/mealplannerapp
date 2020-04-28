@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>163829060314-igsba4copbjm07gjcm0f2c9mvdgne9h4.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.163829060314-igsba4copbjm07gjcm0f2c9mvdgne9h4</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCxA8oUFygNmDas19jkwq9PXYrPREVpB0M</string>
+	<key>GCM_SENDER_ID</key>
+	<string>163829060314</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>meal-planner.Meal-Planner</string>
+	<key>PROJECT_ID</key>
+	<string>mealplanner-d555a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>mealplanner-d555a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:163829060314:ios:706d2523f903c01f0c8be3</string>
+	<key>DATABASE_URL</key>
+	<string>https://mealplanner-d555a.firebaseio.com</string>
+</dict>
+</plist>
