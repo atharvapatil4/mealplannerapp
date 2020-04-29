@@ -20,6 +20,33 @@ class UserData {
     
     init() {
         bookmarks = [Recipe]()
+        //get shit from firebase
+        db.collection("bookmarks").getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                //let pathReference = storage.reference(withPath: "images/")
+                for document in querySnapshot!.documents {
+                    //print("\(document.documentID) => \(document.data())")
+                    let name: String = document.data()["name"] as! String
+                    let imgType: String = document.data()["imgType"] as! String
+                    let id: Int = document.data()["id"] as! Int
+                    let id_str = String(id)
+                    let dict: [String: Any] = document.data()["dict"] as! [String: Any]
+                    let pathReference = storage.reference(withPath: "images/\(id_str).jpg")
+                    let imgRef = pathReference.child("images/\(id_str).jpg")
+                    imgRef.getData(maxSize: 1 * 1024 * 1024) { data, error in
+                        if error != nil {
+                        print("Error")
+                      } else {
+                        let image: UIImage = UIImage(data: data!)!
+                            let recipe = Recipe(name: name, picture: image, id: id, imgType: imgType, dict: dict)
+                        self.bookmarks.append(recipe)
+                      }
+                    }
+                }
+            }
+        }
     }
     
     func addBookmark(recipe: Recipe) {

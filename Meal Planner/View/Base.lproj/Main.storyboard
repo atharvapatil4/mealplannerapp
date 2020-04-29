@@ -596,6 +596,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5v1-JH-N2O">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="0FV-PR-YxF" kind="relationship" relationship="rootViewController" id="CNp-8i-3cO"/>
                     </connections>
@@ -625,7 +628,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="FyE-eP-7s8"/>
-        <segue reference="X6U-o4-Yq4"/>
+        <segue reference="uRQ-M8-FDX"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>

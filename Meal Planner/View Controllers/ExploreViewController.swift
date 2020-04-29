@@ -118,7 +118,9 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate, UIColle
         if let identifier = segue.identifier {
             if identifier == "exploreToRecipeExpanded" {
                 if let dest = segue.destination as? RecipeExpandedViewController, let chosenRecipe = sender as? Recipe {
+                    
                     dest.chosenRecipe = chosenRecipe
+                    
                 }
             }
         }
