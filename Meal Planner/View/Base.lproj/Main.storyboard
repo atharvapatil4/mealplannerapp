@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hkQ-6j-BJ7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8yi-6f-1SJ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Bookmarks View Controller-->
         <scene sceneID="EnM-0P-zxg">
             <objects>
                 <viewController id="Bd0-Mh-ehJ" customClass="BookmarksViewController" customModule="Meal_Planner" customModuleProvider="target" sceneMemberID="viewController">
@@ -59,7 +59,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="cC4-ON-lgm"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="moe-9a-UGu"/>
+                    <navigationItem key="navigationItem" id="50d-F5-Bt1"/>
                     <connections>
                         <outlet property="bookmarksTableView" destination="wv6-bi-YY7" id="3gI-z3-0Rx"/>
                         <segue destination="V2b-j3-zew" kind="presentation" identifier="bookmarksToRecipeExpanded" modalPresentationStyle="fullScreen" id="X6U-o4-Yq4"/>
@@ -67,7 +67,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rPz-5G-uQs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="89.855072463768124" y="-144.64285714285714"/>
+            <point key="canvasLocation" x="1000.0000000000001" y="-144.64285714285714"/>
         </scene>
         <!--Item 3-->
         <scene sceneID="h9g-ia-HFV">
@@ -84,9 +84,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ktu-5a-jVP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-880" y="591"/>
+            <point key="canvasLocation" x="-55" y="563"/>
         </scene>
-        <!--Explore-->
+        <!--Explore View Controller-->
         <scene sceneID="ZGg-eH-TMi">
             <objects>
                 <viewController id="0FV-PR-YxF" customClass="ExploreViewController" customModule="Meal_Planner" customModuleProvider="target" sceneMemberID="viewController">
@@ -157,7 +157,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="198" height="145"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3NN-Be-2uj">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3NN-Be-2uj">
                                                     <rect key="frame" x="0.0" y="0.0" width="198" height="105"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="3NN-Be-2uj" secondAttribute="height" multiplier="219:83" id="hrA-xl-df9"/>
@@ -200,7 +200,6 @@
                         <color key="backgroundColor" red="1" green="0.86746525934710195" blue="0.8288609498886288" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="0m2-Yr-QyK"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Explore" image="magnifyingglass" catalog="system" id="h9b-DY-i7V"/>
                     <navigationItem key="navigationItem" id="Z1a-v6-ZyQ"/>
                     <connections>
                         <outlet property="TitleLabel" destination="kDG-Vl-oYy" id="e3n-x1-TFg"/>
@@ -211,7 +210,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7yK-W4-lro" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="89.855072463768124" y="-845.08928571428567"/>
+            <point key="canvasLocation" x="1000.0000000000001" y="-845.08928571428567"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="n9d-Sf-sh6">
@@ -366,8 +365,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="0FV-PR-YxF" kind="relationship" relationship="viewControllers" id="FyE-eP-7s8"/>
-                        <segue destination="Bd0-Mh-ehJ" kind="relationship" relationship="viewControllers" id="rWE-XF-SxL"/>
+                        <segue destination="yX8-oW-Ww8" kind="relationship" relationship="viewControllers" id="FyE-eP-7s8"/>
+                        <segue destination="Au1-En-xIX" kind="relationship" relationship="viewControllers" id="rWE-XF-SxL"/>
                         <segue destination="AXX-qw-g9O" kind="relationship" relationship="viewControllers" id="hfR-io-eyK"/>
                     </connections>
                 </tabBarController>
@@ -494,12 +493,12 @@
                         <outlet property="recipeImage" destination="1PI-yx-Fci" id="YXT-bY-hM6"/>
                         <outlet property="recipeNameLabel" destination="aPC-6i-mvt" id="uIA-sy-HnU"/>
                         <outlet property="scrollView" destination="ylN-K5-Akm" id="FGt-uC-5vC"/>
-                        <segue destination="0FV-PR-YxF" kind="presentation" identifier="recipeExpandedToExplore" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="wp6-pA-oSz"/>
+                        <segue destination="yX8-oW-Ww8" kind="presentation" identifier="recipeExpandedToExplore" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="wp6-pA-oSz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="owI-DR-4HQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1184.0579710144928" y="-818.30357142857144"/>
+            <point key="canvasLocation" x="2092.753623188406" y="-818.30357142857144"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="jVc-vb-B36">
@@ -514,7 +513,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4jY-7a-qKD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1939.1304347826087" y="-845.08928571428567"/>
+            <point key="canvasLocation" x="2849.275362318841" y="-845.08928571428567"/>
         </scene>
         <!--Login Page View Controller-->
         <scene sceneID="TqM-yD-NcN">
@@ -587,10 +586,46 @@
             </objects>
             <point key="canvasLocation" x="-3883" y="-471"/>
         </scene>
+        <!--Explore-->
+        <scene sceneID="En0-b1-DCu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="yX8-oW-Ww8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Explore" image="magnifyingglass" catalog="system" id="h9b-DY-i7V"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FTC-5J-Xg6">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0FV-PR-YxF" kind="relationship" relationship="rootViewController" id="CNp-8i-3cO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rcc-KT-8IC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="89.855072463768124" y="-845.08928571428567"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="tPF-zE-SAg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Au1-En-xIX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item 2" id="moe-9a-UGu"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Srv-ts-5Xt">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Bd0-Mh-ehJ" kind="relationship" relationship="rootViewController" id="ccI-x9-CiD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lAq-um-gN0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="89.855072463768124" y="-144.64285714285714"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="X6U-o4-Yq4"/>
         <segue reference="FyE-eP-7s8"/>
+        <segue reference="X6U-o4-Yq4"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>

@@ -59,9 +59,6 @@ public class ExploreData {
     }
     
     func refresh() {
-//        defer {
-//
-//
         guard let url = URL(string: urlString) else { fatalError("Error getting url") }
     
         let sesh = URLSession.shared.dataTask(with: url) {(data, response, err) in
@@ -87,6 +84,9 @@ public class ExploreData {
                         let realImage: UIImage = UIImage(data: data)!
                         let toAdd = Recipe(name: title, picture: realImage, id: id, imgType: imgType, dict: recipe)
                         self.recipeList.append(toAdd)
+//                        DispatchQueue.main.async {
+//                            self.recommendedCollectionView.reloadData()
+//                        }
                     }
                 
             }

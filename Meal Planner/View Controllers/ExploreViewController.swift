@@ -25,16 +25,52 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate, UIColle
     @IBAction func lowcarbButtonPressed(_ sender: Any) {
     }
     
+    
+    func fetchRecipes() {
+        guard let url = URL(string: exploreData.urlString) else { fatalError("Error getting url") }
+        
+            let sesh = URLSession.shared.dataTask(with: url) {(data, response, err) in
+                guard let recipeData = data else {return}
+                let json = try? JSONSerialization.jsonObject(with: recipeData, options: [])
+                guard let dictionary = json as? [String: Any] else {return}
+                //recipes -> id title image
+                guard let recipes = dictionary["recipes"] as? [[String:Any]] else {return}
+                for (recipe) in recipes {
+                        if let instructions = recipe["analyzedInstructions"] as? [[String:Any]] {
+                            if (instructions.isEmpty) {
+                                continue
+                            }
+                        }
+                        guard let id =  recipe["id"] as? Int else {return}
+                        guard let img = recipe["image"] as? String else {return}
+                        guard let title = recipe["title"] as? String else {return}
+                        guard let imgType = recipe["imageType"] as? String else {return}
+                        
+                        let imgurl = URL(string: img)
+                        if let data = try? Data(contentsOf: imgurl!)
+                        {
+                            let realImage: UIImage = UIImage(data: data)!
+                            let toAdd = Recipe(name: title, picture: realImage, id: id, imgType: imgType, dict: recipe)
+                            exploreData.recipeList.append(toAdd)
+                            DispatchQueue.main.async {
+                                self.recommendedCollectionView.reloadData()
+                            }
+                        }
+                    
+                }
+                exploreData.finishedLoading = true
+            }
+            sesh.resume()
+    }
     // MARK: - Methods
     override func viewDidLoad() {
         
-        defer {
             super.viewDidLoad()
             recommendedCollectionView.delegate = self
             recommendedCollectionView.dataSource = self
-        }
         
-        exploreData.refresh()
+        fetchRecipes()
+        
         
         // Do any additional setup after loading the view.
     }
