@@ -42,7 +42,7 @@ class RecipeExpandedViewController: UIViewController {
         super.viewDidLoad()
         recipeNameLabel.text = chosenRecipe?.name
         recipeImage.image = chosenRecipe?.picture
-        print("RECIPE EXPANDED: chosen recipe is ", chosenRecipe ?? "")
+        //print("RECIPE EXPANDED: chosen recipe is ", chosenRecipe ?? "")
         guard let preptime = chosenRecipe.dict["readyInMinutes"] as? Int else {return}
         preparationTimeLabel.text = String(preptime) + " minutes"
         
@@ -50,7 +50,7 @@ class RecipeExpandedViewController: UIViewController {
         ingredientsBodyLabel.numberOfLines = 0
         ingredientsBodyLabel.preferredMaxLayoutWidth = 400
         ingredientsBodyLabel.text = ""
-        print(extendedIngredients.count)
+        //print(extendedIngredients.count)
         for (ingredientDict) in extendedIngredients {
             //ingredientsBodyLabel.text = ""
             var amt = 0
@@ -71,7 +71,7 @@ class RecipeExpandedViewController: UIViewController {
             }
             let unwrapped = ingredientsBodyLabel.text  ?? ""
             ingredientsBodyLabel.text = unwrapped + "\n - \(ingredient) "
-            print(ingredient)
+            //print(ingredient)
         }
         //ingredientsBodyLabel.sizeToFit()
         directionsBodyLabel.numberOfLines = 0
@@ -92,7 +92,7 @@ class RecipeExpandedViewController: UIViewController {
             let unwrapped = directionsBodyLabel.text  ?? ""
             directionsBodyLabel.text = unwrapped + stepMessage + "\n"
         }
-        print(directionsBodyLabel.text)
+        //print(directionsBodyLabel.text)
        //directionsBodyLabel.sizeToFit()
     }
     

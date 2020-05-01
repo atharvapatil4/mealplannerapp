@@ -27,6 +27,7 @@ class Recipe {
         self.id = id
         self.imgType = imgType
         self.dict = dict
+        
     }
     
 }

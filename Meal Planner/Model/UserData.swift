@@ -17,40 +17,22 @@ let storage = Storage.storage() // reference to Firebase storage service
 class UserData {
     //init
     var bookmarks: [Recipe]
-    
+    var uid: String?
+    var uploadList: [[String:Any]]
     init() {
         bookmarks = [Recipe]()
         //get shit from firebase
-        db.collection("bookmarks").getDocuments() { (querySnapshot, err) in
-            if let err = err {
-                print("Error getting documents: \(err)")
-            } else {
-                //let pathReference = storage.reference(withPath: "images/")
-                for document in querySnapshot!.documents {
-                    //print("\(document.documentID) => \(document.data())")
-                    let name: String = document.data()["name"] as! String
-                    let imgType: String = document.data()["imgType"] as! String
-                    let id: Int = document.data()["id"] as! Int
-                    let id_str = String(id)
-                    let dict: [String: Any] = document.data()["dict"] as! [String: Any]
-                    let pathReference = storage.reference(withPath: "images/\(id_str).jpg")
-                    let imgRef = pathReference.child("images/\(id_str).jpg")
-                    imgRef.getData(maxSize: 1 * 1024 * 1024) { data, error in
-                        if error != nil {
-                        print("Error")
-                      } else {
-                        let image: UIImage = UIImage(data: data!)!
-                            let recipe = Recipe(name: name, picture: image, id: id, imgType: imgType, dict: dict)
-                        self.bookmarks.append(recipe)
-                      }
-                    }
-                }
-            }
-        }
+        uploadList = [[:]]
     }
     
     func addBookmark(recipe: Recipe) {
         bookmarks.append(recipe)
+        var dic: [String: Any] = [:]
+        dic["name"] = recipe.name
+        dic["id"] = recipe.id
+        dic["imgType"] = recipe.imgType
+        dic["dict"] = recipe.dict
+        uploadList.append(dic)
 //        var name: String
 //        var picture: UIImage
 //        var id: Int
@@ -63,19 +45,33 @@ class UserData {
         uploadMetadata.contentType = "image/jpeg"
         storageRef.putData(imageData)
         
-        var ref: DocumentReference? = nil
+        let docRef = db.collection("bookmarks").document(uid!)
+        docRef.setData(["bookmarkList": self.uploadList])
         
-        ref = db.collection("bookmarks").addDocument(data: [
-            "name" : recipe.name,
-            "id" : recipe.id,
-            "imgType" : recipe.imgType,
-            "dict": recipe.dict
-        ]) { err in
-            if let err = err {
-                print("Error adding document: \(err)")
-            } else {
-                print("Document added with ID: \(ref!.documentID)")
-            }
-        }
+//        docRef.getDocument { (document, error) in
+//            if let document = document, document.exists {
+//                docRef.setData(["bookmarkList": self.uploadList])
+//            } else {
+//                docRef.setData(["bookmarkList": self.uploadList])
+//        }
+        
+//        var ref: DocumentReference? = nil
+//        db.collection("bookmarks")
+//        .document(uid!)
+//        .setData(["bookmarkList": uploadList,
+//                  ], merge:true)
+//
+//                ref = db.collection("bookmarks").addDocument(data: [
+//            "name" : recipe.name,
+//            "id" : recipe.id,
+//            "imgType" : recipe.imgType,
+//            "dict": recipe.dict
+//        ]) { err in
+//            if let err = err {
+//                print("Error adding document: \(err)")
+//            } else {
+//                print("Document added with ID: \(ref!.documentID)")
+//            }
+//        }
     }
 }

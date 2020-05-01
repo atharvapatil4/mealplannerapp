@@ -59,6 +59,7 @@ class LoginViewController: UIViewController {
                     self.errorLabel.alpha = 1
                 }
                 else {
+                    user.uid = result!.user.uid
                     // transition to home screen
                     let tabBarViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? UITabBarController
                     

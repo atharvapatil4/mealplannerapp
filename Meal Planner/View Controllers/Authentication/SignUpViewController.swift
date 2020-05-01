@@ -89,6 +89,7 @@ class SignUpViewController: UIViewController {
                         }
                     }
                     //Transition to the home screen
+                    user.uid = result!.user.uid
                     self.transitionToExplore()
                 }
             }
