@@ -588,6 +588,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5v1-JH-N2O">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="0FV-PR-YxF" kind="relationship" relationship="rootViewController" id="CNp-8i-3cO"/>
                     </connections>
@@ -615,6 +618,13 @@
             <point key="canvasLocation" x="89.855072463768124" y="-144.64285714285714"/>
         </scene>
     </scenes>
+<<<<<<< HEAD
+=======
+    <inferredMetricsTieBreakers>
+        <segue reference="FyE-eP-7s8"/>
+        <segue reference="uRQ-M8-FDX"/>
+    </inferredMetricsTieBreakers>
+>>>>>>> f437c1d555e6de858ff1c7de3bb1f82a83eaca05
     <resources>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
     </resources>
