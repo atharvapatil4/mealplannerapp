@@ -97,16 +97,16 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate, UIColle
         }
     }
     
-     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-           // segue to preview controller with selected thread
-        if let chosenRecipe = exploreData.recipeList[indexPath.item] as Recipe? {
-            print("CHOSEN RECIPE: ", chosenRecipe)
-            performSegue(withIdentifier: "exploreToRecipe", sender: chosenRecipe)
-        }
-            //perform segue with sender chosenThread
-        
-    
-       }
+//     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//           // segue to preview controller with selected thread
+//        if let chosenRecipe = exploreData.recipeList[indexPath.item] as Recipe? {
+//            print("CHOSEN RECIPE: ", chosenRecipe)
+//            performSegue(withIdentifier: "exploreToRecipeExpanded", sender: chosenRecipe)
+//        }
+//            //perform segue with sender chosenThread
+//
+//    
+//       }
     
     override func viewWillAppear(_ animated: Bool) {
     
@@ -120,15 +120,20 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate, UIColle
         print("Preparing segue from ExploreData to Recipe Expanded")
         print(sender ?? "no sender")
         super.prepare(for: segue, sender:sender)
-        if let identifier = segue.identifier {
-            if identifier == "exploreToRecipeExpanded" {
-                if let dest = segue.destination as? RecipeExpandedViewController, let chosenRecipe = sender as? Recipe {
-                    dest.chosenRecipe = chosenRecipe
-                    print("IN PREPARE: dest is ", dest)
-                    print("IN PREPARE: dest.chosenRecipe is ", dest.chosenRecipe ?? "NIL")
-                }
-            }
+        if let destination = segue.destination as?
+            RecipeExpandedViewController, let index =
+            recommendedCollectionView.indexPathsForSelectedItems?.first {
+            destination.chosenRecipe = exploreData.recipeList[index.row]
         }
+//        if let identifier = segue.identifier {
+//            if identifier == "exploreToRecipe" {
+//                if let dest = segue.destination as? RecipeExpandedViewController, let chosenRecipe = sender as? Recipe {
+//                    dest.chosenRecipe = chosenRecipe
+//                    print("IN PREPARE: dest is ", dest)
+//                    print("IN PREPARE: dest.chosenRecipe is ", dest.chosenRecipe ?? "NIL")
+//                }
+//            }
+//        }
     }
     
     

@@ -43,7 +43,7 @@ class RecipeExpandedViewController: UIViewController {
         super.viewDidLoad()
         recipeNameLabel.text = chosenRecipe?.name
         recipeImage.image = chosenRecipe?.picture
-        print("RECIPE EXPANDED: chosen recipe is ", chosenRecipe ?? "NIL")
+        print("RECIPE EXPANDED: chosen recipe is ", chosenRecipe ?? "")
         guard let preptime = chosenRecipe.dict["readyInMinutes"] as? Int else {return}
         preparationTimeLabel.text = String(preptime) + " minutes"
         
