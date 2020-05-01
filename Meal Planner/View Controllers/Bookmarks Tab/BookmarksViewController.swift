@@ -45,20 +45,12 @@ class BookmarksViewController: UIViewController, UITableViewDelegate, UITableVie
         }
         return UITableViewCell()
     }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let chosenRecipe = user.bookmarks[indexPath.item] as Recipe? {
-                   print(chosenRecipe)
-                   performSegue(withIdentifier: "bookmarksToRecipeExpanded", sender: chosenRecipe)
-               }
-    }
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let identifier = segue.identifier {
-            if identifier == "bookmarksToRecipeExpanded" {
-                if let dest = segue.destination as? RecipeExpandedViewController, let chosenRecipe = sender as? Recipe {
-                    dest.chosenRecipe = chosenRecipe
-                }
-            }
+    if let destination = segue.destination as?
+        RecipeExpandedViewController, let index =
+        bookmarksTableView.indexPathForSelectedRow?.first {
+        destination.chosenRecipe = exploreData.recipeList[index]
         }
     }
     

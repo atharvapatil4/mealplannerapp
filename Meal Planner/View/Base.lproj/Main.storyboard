@@ -51,6 +51,7 @@
                                         <connections>
                                             <outlet property="recipeImageView" destination="8Sp-4N-Cq2" id="ymI-t1-t7w"/>
                                             <outlet property="recipeLabel" destination="ebd-J1-qBH" id="yFo-Mq-fsq"/>
+                                            <segue destination="V2b-j3-zew" kind="show" id="sLK-6p-Ebg"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -646,10 +647,11 @@
         <!--Bookmarks-->
         <scene sceneID="tPF-zE-SAg">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Au1-En-xIX" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Au1-En-xIX" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Bookmarks" id="moe-9a-UGu"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Srv-ts-5Xt">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -662,6 +664,9 @@
             <point key="canvasLocation" x="-120" y="637"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="sLK-6p-Ebg"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
     </resources>
