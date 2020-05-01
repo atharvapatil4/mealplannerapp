@@ -618,13 +618,7 @@
             <point key="canvasLocation" x="89.855072463768124" y="-144.64285714285714"/>
         </scene>
     </scenes>
-<<<<<<< HEAD
-=======
-    <inferredMetricsTieBreakers>
-        <segue reference="FyE-eP-7s8"/>
-        <segue reference="uRQ-M8-FDX"/>
-    </inferredMetricsTieBreakers>
->>>>>>> f437c1d555e6de858ff1c7de3bb1f82a83eaca05
+
     <resources>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
     </resources>
