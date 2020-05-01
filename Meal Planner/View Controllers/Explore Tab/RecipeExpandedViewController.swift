@@ -33,7 +33,6 @@ class RecipeExpandedViewController: UIViewController {
     }
     @IBAction func bookmarkButtonPressed(_ sender: UIButton) {
         user.addBookmark(recipe: chosenRecipe)
-        
     }
     
     override func viewDidLayoutSubviews() {

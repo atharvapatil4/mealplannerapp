@@ -66,24 +66,68 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rPz-5G-uQs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1000.0000000000001" y="-144.64285714285714"/>
+            <point key="canvasLocation" x="713" y="637"/>
         </scene>
-        <!--Item 3-->
+        <!--Meal Plan-->
         <scene sceneID="h9g-ia-HFV">
             <objects>
-                <viewController id="AXX-qw-g9O" sceneMemberID="viewController">
+                <viewController id="AXX-qw-g9O" customClass="MealPlannerViewController" customModule="Meal_Planner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Yq-TC-epR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Meal Planner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNF-9Q-Cy3">
+                                <rect key="frame" x="44" y="112" width="243" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lunch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOK-hR-fF8">
+                                <rect key="frame" x="64" y="631" width="48" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dinner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idc-U5-IpX">
+                                <rect key="frame" x="63" y="660" width="51" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OpH-zA-zlz" customClass="CardView" customModule="Meal_Planner" customModuleProvider="target">
+                                <rect key="frame" x="116" y="219" width="240" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Meal Type" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cby-JH-oeE">
+                                        <rect key="frame" x="153" y="8" width="79" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ls-2Y-nro">
+                                        <rect key="frame" x="-11" y="-12" width="147" height="124"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="IYG-gj-1sC"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 3" id="Ag0-Vz-WdC"/>
+                    <tabBarItem key="tabBarItem" title="Meal Plan" id="Ag0-Vz-WdC"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="breakfastCardView" destination="OpH-zA-zlz" id="k56-A9-IOj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ktu-5a-jVP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-55" y="563"/>
+            <point key="canvasLocation" x="-94.20289855072464" y="-145.3125"/>
         </scene>
         <!--Explore View Controller-->
         <scene sceneID="ZGg-eH-TMi">
@@ -365,8 +409,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="yX8-oW-Ww8" kind="relationship" relationship="viewControllers" id="FyE-eP-7s8"/>
-                        <segue destination="Au1-En-xIX" kind="relationship" relationship="viewControllers" id="rWE-XF-SxL"/>
                         <segue destination="AXX-qw-g9O" kind="relationship" relationship="viewControllers" id="hfR-io-eyK"/>
+                        <segue destination="Au1-En-xIX" kind="relationship" relationship="viewControllers" id="rWE-XF-SxL"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x8l-XX-KHD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -599,11 +643,11 @@
             </objects>
             <point key="canvasLocation" x="89.855072463768124" y="-845.08928571428567"/>
         </scene>
-        <!--Item 2-->
+        <!--Bookmarks-->
         <scene sceneID="tPF-zE-SAg">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Au1-En-xIX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="moe-9a-UGu"/>
+                    <tabBarItem key="tabBarItem" title="Bookmarks" id="moe-9a-UGu"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Srv-ts-5Xt">
                         <autoresizingMask key="autoresizingMask"/>
@@ -615,10 +659,9 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lAq-um-gN0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="89.855072463768124" y="-144.64285714285714"/>
+            <point key="canvasLocation" x="-120" y="637"/>
         </scene>
     </scenes>
-
     <resources>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
     </resources>

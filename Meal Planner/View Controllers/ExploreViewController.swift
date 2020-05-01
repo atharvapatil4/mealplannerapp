@@ -64,11 +64,14 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate, UIColle
     }
     // MARK: - Methods
     override func viewDidLoad() {
+        super.viewDidLoad()
+        recommendedCollectionView.delegate = self
+        recommendedCollectionView.dataSource = self
         
-            super.viewDidLoad()
-            recommendedCollectionView.delegate = self
-            recommendedCollectionView.dataSource = self
-        
+        // Set navigation bar to be invisible
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
         fetchRecipes()
         
         
@@ -97,22 +100,17 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate, UIColle
         }
     }
     
-//     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//           // segue to preview controller with selected thread
-//        if let chosenRecipe = exploreData.recipeList[indexPath.item] as Recipe? {
-//            print("CHOSEN RECIPE: ", chosenRecipe)
-//            performSegue(withIdentifier: "exploreToRecipeExpanded", sender: chosenRecipe)
-//        }
-//            //perform segue with sender chosenThread
-//
-//    
-//       }
-    
+
     override func viewWillAppear(_ animated: Bool) {
     
         recommendedCollectionView.reloadData()
        
     }
+    
+//    override func viewDidAppear(_ animated: Bool) {
+//        let nav = self.navigationController?.navigationBar
+//        nav?.isTranslucent = true
+//    }
     
     //MARK: - Navigation
     

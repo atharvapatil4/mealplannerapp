@@ -35,6 +35,8 @@
 		A15117CE245BCB46007DD70B /* loginbg.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A15117CD245BCB46007DD70B /* loginbg.mp4 */; };
 		A15117D0245BCBDE007DD70B /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A15117CF245BCBDE007DD70B /* video.mp4 */; };
 		A15117D2245BCCC4007DD70B /* tomatoes.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A15117D1245BCCC4007DD70B /* tomatoes.mp4 */; };
+		A16352CC245BF7AA001D8F17 /* MealPlannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16352CB245BF7AA001D8F17 /* MealPlannerViewController.swift */; };
+		A16352CE245BF937001D8F17 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16352CD245BF937001D8F17 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +96,8 @@
 		A15117CD245BCB46007DD70B /* loginbg.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = loginbg.mp4; sourceTree = "<group>"; };
 		A15117CF245BCBDE007DD70B /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 		A15117D1245BCCC4007DD70B /* tomatoes.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = tomatoes.mp4; sourceTree = "<group>"; };
+		A16352CB245BF7AA001D8F17 /* MealPlannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlannerViewController.swift; sourceTree = "<group>"; };
+		A16352CD245BF937001D8F17 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		F95B5DC8D02B50E71F6301B7 /* Pods_Meal_Planner_Meal_PlannerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meal_Planner_Meal_PlannerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -199,6 +203,7 @@
 				4586018A244FDFFF00E4AE3A /* RecommendedCollectionViewCell.swift */,
 				4596B9CF2451718100DCB298 /* InformationTableViewCell.swift */,
 				45D6577F2457D06400DD2F19 /* BookmarkTableViewCell.swift */,
+				A16352CD245BF937001D8F17 /* CardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -206,6 +211,7 @@
 		45A25EFA244FD27A0094B6BA /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A16352CA245BF781001D8F17 /* Meal Planner Tab */,
 				45D657812458C7F400DD2F19 /* Authentication */,
 				45D6577C2457CFA800DD2F19 /* Bookmarks Tab */,
 				45A25EFB244FD2E20094B6BA /* Explore Tab */,
@@ -271,6 +277,14 @@
 				A15117D1245BCCC4007DD70B /* tomatoes.mp4 */,
 			);
 			path = Media;
+			sourceTree = "<group>";
+		};
+		A16352CA245BF781001D8F17 /* Meal Planner Tab */ = {
+			isa = PBXGroup;
+			children = (
+				A16352CB245BF7AA001D8F17 /* MealPlannerViewController.swift */,
+			);
+			path = "Meal Planner Tab";
 			sourceTree = "<group>";
 		};
 		AB7F7DEF1F1109F582A8ADE9 /* Frameworks */ = {
@@ -535,12 +549,14 @@
 				A15117C9245BB8DC007DD70B /* Constants.swift in Sources */,
 				45D657872458C90600DD2F19 /* LoginPageViewController.swift in Sources */,
 				45A25ECD244FD0D30094B6BA /* ExploreViewController.swift in Sources */,
+				A16352CC245BF7AA001D8F17 /* MealPlannerViewController.swift in Sources */,
 				45D657802457D06400DD2F19 /* BookmarkTableViewCell.swift in Sources */,
 				45D6577B2457C4DA00DD2F19 /* UserData.swift in Sources */,
 				4586018D244FE8E500E4AE3A /* ExploreData.swift in Sources */,
 				45A25EC9244FD0D30094B6BA /* AppDelegate.swift in Sources */,
 				4596B9D02451718100DCB298 /* InformationTableViewCell.swift in Sources */,
 				45D657852458C82600DD2F19 /* SignUpViewController.swift in Sources */,
+				A16352CE245BF937001D8F17 /* CardView.swift in Sources */,
 				45A25ECB244FD0D30094B6BA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
