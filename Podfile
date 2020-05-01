@@ -8,6 +8,8 @@ target 'Meal Planner' do
   pod 'Firebase/Storage'
   pod 'Firebase/Database'
   pod 'Firebase/Firestore'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Core'
 
   # Pods for Meal Planner
   target 'Meal PlannerTests' do

@@ -100,8 +100,8 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate, UIColle
      func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
            // segue to preview controller with selected thread
         if let chosenRecipe = exploreData.recipeList[indexPath.item] as Recipe? {
-            print(chosenRecipe)
-            performSegue(withIdentifier: "exploreToRecipeExpanded", sender: chosenRecipe)
+            print("CHOSEN RECIPE: ", chosenRecipe)
+            performSegue(withIdentifier: "exploreToRecipe", sender: chosenRecipe)
         }
             //perform segue with sender chosenThread
         
@@ -114,11 +114,18 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate, UIColle
        
     }
     
+    //MARK: - Navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("Preparing segue from ExploreData to Recipe Expanded")
+        print(sender ?? "no sender")
+        super.prepare(for: segue, sender:sender)
         if let identifier = segue.identifier {
             if identifier == "exploreToRecipeExpanded" {
                 if let dest = segue.destination as? RecipeExpandedViewController, let chosenRecipe = sender as? Recipe {
                     dest.chosenRecipe = chosenRecipe
+                    print("IN PREPARE: dest is ", dest)
+                    print("IN PREPARE: dest.chosenRecipe is ", dest.chosenRecipe ?? "NIL")
                 }
             }
         }
