@@ -18,6 +18,12 @@ class BookmarksViewController: UIViewController, UITableViewDelegate, UITableVie
         super.viewDidLoad()
         bookmarksTableView.delegate = self
         bookmarksTableView.dataSource = self
+        
+        // Set navigation bar to be invisible
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        
         fetchBookmarks()
     }
     
@@ -27,7 +33,7 @@ class BookmarksViewController: UIViewController, UITableViewDelegate, UITableVie
     
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 300
+        return 150
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

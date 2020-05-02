@@ -18,14 +18,28 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate, UIColle
     @IBOutlet weak var filteredTableView: UITableView!
     
     // MARK: - Actions
-    @IBAction func popularButtonPressed(_ sender: UIButton) {
+
+   @IBAction func breakfastButtonPressed(_ sender: UIButton) {
+       let tag = "breakfast"
+       fetchFilteredRecipes(tag: tag)
+   }
+    
+    @IBAction func desertButtonPressed(_ sender: UIButton) {
+        
+        let tag = "desert"
+        fetchFilteredRecipes(tag: tag)
     }
-    @IBAction func vegetarianButtonpressed(_ sender: Any) {
+    @IBAction func chineseButtonPressed(_ sender: UIButton) {
+        let tag = "Chinese"
+        fetchFilteredRecipes(tag: tag)
     }
-    @IBAction func balancedButtonPressed(_ sender: Any) {
+    @IBAction func vegetarianButtonPressed(_ sender: UIButton) {
+        let tag = "Vegetarian"
+        fetchFilteredRecipes(tag: tag)
     }
-    @IBAction func lowcarbButtonPressed(_ sender: Any) {
-    }
+    
+    
+    
     
     // MARK: - TableViewDelegate
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -116,7 +130,7 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate, UIColle
     }
     
     func fetchFilteredRecipes(tag :String) {
-        let urlString = "https://api.spoonacular.com/recipes/random?number=20&tags=\(tag)&apiKey=8b8a10a2cede413daffe571c0a5be321"
+        let urlString = "https://api.spoonacular.com/recipes/random?number=20&tags=\(tag)&apiKey=\(exploreData.emilyKey)"
         guard let url = URL(string: urlString) else { fatalError("Error getting url") }
         print("FETCH FILTERED RECIPES URLSTRING: " + urlString)
             let sesh = URLSession.shared.dataTask(with: url) {(data, response, err) in
@@ -125,6 +139,7 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate, UIColle
                 guard let dictionary = json as? [String: Any] else {return}
                 //recipes -> id title image
                 guard let recipes = dictionary["recipes"] as? [[String:Any]] else {return}
+                
                 for (recipe) in recipes {
                         if let instructions = recipe["analyzedInstructions"] as? [[String:Any]] {
                             if (instructions.isEmpty) {
