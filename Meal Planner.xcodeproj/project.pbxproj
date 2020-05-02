@@ -30,6 +30,7 @@
 		45D657872458C90600DD2F19 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D657862458C90500DD2F19 /* LoginPageViewController.swift */; };
 		45F37A072458D0970053F754 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F37A062458D0970053F754 /* Utilities.swift */; };
 		64A7DC30C9C2E1E769593F57 /* Pods_Meal_Planner_Meal_PlannerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F95B5DC8D02B50E71F6301B7 /* Pods_Meal_Planner_Meal_PlannerUITests.framework */; };
+		A10E9CD7245CDCBC00F6DE6A /* FilteredRecipesTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10E9CD6245CDCBC00F6DE6A /* FilteredRecipesTableCell.swift */; };
 		A15117C9245BB8DC007DD70B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15117C8245BB8DC007DD70B /* Constants.swift */; };
 		A15117CC245BC1A1007DD70B /* spices.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A15117CB245BC1A1007DD70B /* spices.mp4 */; };
 		A15117CE245BCB46007DD70B /* loginbg.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A15117CD245BCB46007DD70B /* loginbg.mp4 */; };
@@ -91,6 +92,7 @@
 		64CCA6795FD18DF285A4FB4C /* Pods-Meal PlannerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meal PlannerTests.debug.xcconfig"; path = "Target Support Files/Pods-Meal PlannerTests/Pods-Meal PlannerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6E36BD1E605C69843A28B677 /* Pods-Meal Planner-Meal PlannerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meal Planner-Meal PlannerUITests.release.xcconfig"; path = "Target Support Files/Pods-Meal Planner-Meal PlannerUITests/Pods-Meal Planner-Meal PlannerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A05E889E07747717D7654306 /* Pods-Meal Planner-Meal PlannerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meal Planner-Meal PlannerUITests.debug.xcconfig"; path = "Target Support Files/Pods-Meal Planner-Meal PlannerUITests/Pods-Meal Planner-Meal PlannerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A10E9CD6245CDCBC00F6DE6A /* FilteredRecipesTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredRecipesTableCell.swift; sourceTree = "<group>"; };
 		A15117C8245BB8DC007DD70B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A15117CB245BC1A1007DD70B /* spices.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = spices.mp4; sourceTree = "<group>"; };
 		A15117CD245BCB46007DD70B /* loginbg.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = loginbg.mp4; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 				4596B9CF2451718100DCB298 /* InformationTableViewCell.swift */,
 				45D6577F2457D06400DD2F19 /* BookmarkTableViewCell.swift */,
 				A16352CD245BF937001D8F17 /* CardView.swift */,
+				A10E9CD6245CDCBC00F6DE6A /* FilteredRecipesTableCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -550,6 +553,7 @@
 				45D657872458C90600DD2F19 /* LoginPageViewController.swift in Sources */,
 				45A25ECD244FD0D30094B6BA /* ExploreViewController.swift in Sources */,
 				A16352CC245BF7AA001D8F17 /* MealPlannerViewController.swift in Sources */,
+				A10E9CD7245CDCBC00F6DE6A /* FilteredRecipesTableCell.swift in Sources */,
 				45D657802457D06400DD2F19 /* BookmarkTableViewCell.swift in Sources */,
 				45D6577B2457C4DA00DD2F19 /* UserData.swift in Sources */,
 				4586018D244FE8E500E4AE3A /* ExploreData.swift in Sources */,

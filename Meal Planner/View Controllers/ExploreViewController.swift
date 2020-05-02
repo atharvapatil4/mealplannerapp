@@ -8,12 +8,14 @@
 import Foundation
 import UIKit
 
-class ExploreViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class ExploreViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITableViewDelegate, UITableViewDataSource{
     
     // MARK: - Outlets
     @IBOutlet var recommendedCollectionView: UICollectionView!
     @IBOutlet var searchforRecipe: UITextField!
     @IBOutlet weak var TitleLabel: UILabel!
+//    @IBOutlet weak var filteredTableView: UITableView!
+    @IBOutlet weak var filteredTableView: UITableView!
     
     // MARK: - Actions
     @IBAction func popularButtonPressed(_ sender: UIButton) {
@@ -25,6 +27,87 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate, UIColle
     @IBAction func lowcarbButtonPressed(_ sender: Any) {
     }
     
+    // MARK: - TableViewDelegate
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            return exploreData.recipeList.count
+        }
+        
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "filteredRecipeCell", for: indexPath) as? FilteredRecipesTableCell {
+            let recipe = exploreData.recipeList[indexPath.row]
+            cell.recipeName.text = recipe.name
+            
+            if let image = recipe.picture as? UIImage {
+                cell.recipeImageView.image = image
+            }
+            cell.recipeImageView.contentMode = UIView.ContentMode.scaleAspectFill
+            cell.layer.cornerRadius = 5.0
+            cell.layer.masksToBounds = true
+            cell.backgroundColor = UIColor.white
+            return cell
+        } else {
+            return UITableViewCell()
+        }
+    }
+        
+
+        
+    
+    //    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 300
+//    }
+//
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return exploreData.recipeList.count
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//
+//        if let cell = tableView.dequeueReusableCell(withIdentifier: "filteredRecipeCell", for: indexPath) as? filteredRecipesTableCell {
+//            let recipe = exploreData.recipeList[indexPath.row]
+//            // configure cell
+//            print("BEFORE SETTING IMAGE")
+//            cell.recipeImageView.image = recipe.picture
+//            print("AFTER SETTING IMAGE")
+//            cell.recipeLabel.text = recipe.name
+//            return cell
+//        }
+//        return UITableViewCell()
+//    }
+
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//    if let destination = segue.destination as?
+//        RecipeExpandedViewController, let index =
+//        filteredTableView.indexPathForSelectedRow?.first {
+//        destination.chosenRecipe = exploreData.recipeList[index]
+//        }
+//    }
+    // MARK: - Methods
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        recommendedCollectionView.delegate = self
+        recommendedCollectionView.dataSource = self
+        
+        filteredTableView.delegate = self
+        filteredTableView.dataSource = self
+        
+        // Set navigation bar to be invisible
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        fetchRecipes()
+//        fetchFilteredRecipes()
+        
+        // Do any additional setup after loading the view.
+    }
+    
+    func fetchFilteredRecipes() {
+        self.filteredTableView.reloadData()
+    }
     
     func fetchRecipes() {
         guard let url = URL(string: exploreData.urlString) else { fatalError("Error getting url") }
@@ -54,6 +137,7 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate, UIColle
                             exploreData.recipeList.append(toAdd)
                             DispatchQueue.main.async {
                                 self.recommendedCollectionView.reloadData()
+                                self.filteredTableView.reloadData()
                             }
                         }
                     
@@ -62,21 +146,7 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate, UIColle
             }
             sesh.resume()
     }
-    // MARK: - Methods
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        recommendedCollectionView.delegate = self
-        recommendedCollectionView.dataSource = self
-        
-        // Set navigation bar to be invisible
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.isTranslucent = true
-        fetchRecipes()
-        
-        
-        // Do any additional setup after loading the view.
-    }
+    
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return exploreData.recipeList.count
@@ -102,15 +172,10 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate, UIColle
     
 
     override func viewWillAppear(_ animated: Bool) {
-    
+        filteredTableView.reloadData()
         recommendedCollectionView.reloadData()
        
     }
-    
-//    override func viewDidAppear(_ animated: Bool) {
-//        let nav = self.navigationController?.navigationBar
-//        nav?.isTranslucent = true
-//    }
     
     //MARK: - Navigation
     
@@ -123,15 +188,6 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate, UIColle
             recommendedCollectionView.indexPathsForSelectedItems?.first {
             destination.chosenRecipe = exploreData.recipeList[index.row]
         }
-//        if let identifier = segue.identifier {
-//            if identifier == "exploreToRecipe" {
-//                if let dest = segue.destination as? RecipeExpandedViewController, let chosenRecipe = sender as? Recipe {
-//                    dest.chosenRecipe = chosenRecipe
-//                    print("IN PREPARE: dest is ", dest)
-//                    print("IN PREPARE: dest.chosenRecipe is ", dest.chosenRecipe ?? "NIL")
-//                }
-//            }
-//        }
     }
     
     

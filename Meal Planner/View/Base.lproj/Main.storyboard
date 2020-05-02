@@ -152,25 +152,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5C6-HX-lCA">
-                                <rect key="frame" x="39" y="404" width="53" height="30"/>
+                                <rect key="frame" x="33" y="404" width="65" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Popular"/>
+                                <state key="normal" title="Breakfast"/>
                                 <connections>
                                     <action selector="popularButtonPressed:" destination="0FV-PR-YxF" eventType="touchUpInside" id="NOr-8X-jaj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zps-Zh-Rv8">
-                                <rect key="frame" x="118" y="404" width="74" height="30"/>
+                                <rect key="frame" x="132" y="404" width="47" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Vegetarian"/>
+                                <state key="normal" title="Desert"/>
                                 <connections>
                                     <action selector="vegetarianButtonpressed:" destination="0FV-PR-YxF" eventType="touchUpInside" id="OPv-ME-hde"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1S-H3-HLG">
-                                <rect key="frame" x="217" y="404" width="64" height="30"/>
+                                <rect key="frame" x="221" y="404" width="56" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Balanced"/>
+                                <state key="normal" title="Chinese"/>
                                 <connections>
                                     <action selector="balancedButtonPressed:" destination="0FV-PR-YxF" eventType="touchUpInside" id="tcc-rn-VPO"/>
                                 </connections>
@@ -186,7 +186,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="y1O-RG-TCd">
                                 <rect key="frame" x="21" y="212" width="393" height="181"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.86746525929999996" blue="0.82886094990000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SkP-UE-WmI">
                                     <size key="itemSize" width="198" height="145"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -241,6 +241,47 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1LA-zJ-4zX">
+                                <rect key="frame" x="20" y="462" width="374" height="351"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="filteredRecipeCell" rowHeight="114" id="VW5-sP-rHA" customClass="FilteredRecipesTableCell" customModule="Meal_Planner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="114"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VW5-sP-rHA" id="91Z-Ze-KZw">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="114"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4eO-bZ-rEH">
+                                                    <rect key="frame" x="0.0" y="0.0" width="216" height="114"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oce-Mo-SV4">
+                                                    <rect key="frame" x="244" y="11" width="110" height="41"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="4eO-bZ-rEH" firstAttribute="leading" secondItem="91Z-Ze-KZw" secondAttribute="leading" id="I5q-Er-V6t"/>
+                                                <constraint firstAttribute="trailing" secondItem="4eO-bZ-rEH" secondAttribute="trailing" constant="158" id="UOH-xf-yxw"/>
+                                                <constraint firstAttribute="bottom" secondItem="Oce-Mo-SV4" secondAttribute="bottom" constant="112" id="VSu-0O-eP3"/>
+                                                <constraint firstItem="Oce-Mo-SV4" firstAttribute="leading" secondItem="91Z-Ze-KZw" secondAttribute="leading" constant="244" id="aLf-dv-Q6j"/>
+                                                <constraint firstItem="Oce-Mo-SV4" firstAttribute="top" secondItem="91Z-Ze-KZw" secondAttribute="top" constant="34" id="ixO-0g-wXO"/>
+                                                <constraint firstAttribute="trailing" secondItem="Oce-Mo-SV4" secondAttribute="trailing" constant="85" id="qSp-dU-4dy"/>
+                                                <constraint firstItem="4eO-bZ-rEH" firstAttribute="top" secondItem="91Z-Ze-KZw" secondAttribute="top" id="vbH-Si-AWJ"/>
+                                                <constraint firstAttribute="bottom" secondItem="4eO-bZ-rEH" secondAttribute="bottom" id="zDc-gz-0GU"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageView" destination="4eO-bZ-rEH" id="U6R-oO-gig"/>
+                                            <outlet property="recipeImageView" destination="4eO-bZ-rEH" id="aYj-T0-JbL"/>
+                                            <outlet property="recipeName" destination="Oce-Mo-SV4" id="LQ2-xz-wen"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.86746525934710195" blue="0.8288609498886288" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="0m2-Yr-QyK"/>
@@ -248,6 +289,7 @@
                     <navigationItem key="navigationItem" id="pnN-f9-Alv"/>
                     <connections>
                         <outlet property="TitleLabel" destination="kDG-Vl-oYy" id="e3n-x1-TFg"/>
+                        <outlet property="filteredTableView" destination="1LA-zJ-4zX" id="LGH-bI-mun"/>
                         <outlet property="recommendedCollectionView" destination="y1O-RG-TCd" id="DkJ-rA-mR1"/>
                         <outlet property="searchforRecipe" destination="EyO-SV-FEz" id="RVj-b3-Syi"/>
                     </connections>
@@ -665,7 +707,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="sLK-6p-Ebg"/>
+        <segue reference="5kd-bG-kdE"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
