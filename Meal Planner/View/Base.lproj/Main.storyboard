@@ -135,7 +135,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ktu-5a-jVP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-94.20289855072464" y="-145.3125"/>
+            <point key="canvasLocation" x="378" y="-151"/>
         </scene>
         <!--Explore View Controller-->
         <scene sceneID="ZGg-eH-TMi">
@@ -491,7 +491,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="yX8-oW-Ww8" kind="relationship" relationship="viewControllers" id="FyE-eP-7s8"/>
-                        <segue destination="AXX-qw-g9O" kind="relationship" relationship="viewControllers" id="hfR-io-eyK"/>
                         <segue destination="Au1-En-xIX" kind="relationship" relationship="viewControllers" id="rWE-XF-SxL"/>
                     </connections>
                 </tabBarController>

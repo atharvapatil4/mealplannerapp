@@ -27,10 +27,10 @@ class BookmarkTableViewCell: UITableViewCell {
        // Configure the view for the selected state
    }
     
-    override func prepareForReuse() {
-        super.prepareForReuse()
-        
-        recipeImageView.image = nil
-        recipeLabel.text?.removeAll()
-    }
+//    override func prepareForReuse() {
+//        super.prepareForReuse()
+//
+//        recipeImageView.image = nil
+//        recipeLabel.text?.removeAll()
+//    }
 }
