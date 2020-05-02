@@ -139,7 +139,7 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate, UIColle
                 guard let dictionary = json as? [String: Any] else {return}
                 //recipes -> id title image
                 guard let recipes = dictionary["recipes"] as? [[String:Any]] else {return}
-                
+                exploreData.filteredRecipeList = [Recipe]()
                 for (recipe) in recipes {
                         if let instructions = recipe["analyzedInstructions"] as? [[String:Any]] {
                             if (instructions.isEmpty) {
