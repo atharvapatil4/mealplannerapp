@@ -44,10 +44,11 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate, UIColle
             if let image = recipe.picture as? UIImage {
                 cell.recipeImageView.image = image
             }
-            cell.recipeImageView.contentMode = UIView.ContentMode.scaleAspectFill
-            cell.layer.cornerRadius = 5.0
-            cell.layer.masksToBounds = true
-            cell.backgroundColor = UIColor.white
+            cell.setUpCellLayout()
+//            cell.recipeImageView.contentMode = UIView.ContentMode.scaleAspectFill
+//            cell.layer.cornerRadius = 5.0
+//            cell.layer.masksToBounds = true
+//            cell.backgroundColor = UIColor.white
             return cell
         } else {
             return UITableViewCell()

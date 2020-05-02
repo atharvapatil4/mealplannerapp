@@ -14,6 +14,7 @@ class FilteredRecipesTableCell: UITableViewCell {
     
     @IBOutlet var recipeImageView: UIImageView!
     @IBOutlet var recipeName: UILabel!
+    @IBOutlet var placeholderView: UIView!
     
     
     override func awakeFromNib() {
@@ -26,18 +27,20 @@ class FilteredRecipesTableCell: UITableViewCell {
           // Configure the view for the selected state
       }
     
-    
-//    override func layoutSubviews() {
-//        super.layoutSubviews()
-//        //set the values for top,left,bottom,right margins
-//                let margins = UIEdgeInsets(top: 0, left: 0, bottom: 10, right: 0)
-//        self.frame = self.frame.inset(by: margins)
-//    }
-    
     override func prepareForReuse() {
         super.prepareForReuse()
         
         recipeImageView.image = nil
         recipeName.text?.removeAll()
+    }
+    
+    func setUpCellLayout() {
+        placeholderView.layer.cornerRadius = 5.0
+        placeholderView.layer.masksToBounds = true
+        placeholderView.backgroundColor = UIColor.white
+        recipeImageView.contentMode = UIView.ContentMode.scaleAspectFill
+//        self.layer.cornerRadius = 5.0
+//        self.layer.masksToBounds = true
+//        self.backgroundColor = UIColor.white
     }
 }
