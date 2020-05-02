@@ -29,16 +29,16 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     // MARK: - TableViewDelegate
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return exploreData.recipeList.count
+            return exploreData.filteredRecipeList.count
         }
         
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 200
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "filteredRecipeCell", for: indexPath) as? FilteredRecipesTableCell {
-            let recipe = exploreData.recipeList[indexPath.row]
+            let recipe = exploreData.filteredRecipeList[indexPath.row]
             cell.recipeName.text = recipe.name
             
             if let image = recipe.picture as? UIImage {
@@ -55,38 +55,6 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate, UIColle
         }
     }
         
-
-        
-    
-    //    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 300
-//    }
-//
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return exploreData.recipeList.count
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//
-//        if let cell = tableView.dequeueReusableCell(withIdentifier: "filteredRecipeCell", for: indexPath) as? filteredRecipesTableCell {
-//            let recipe = exploreData.recipeList[indexPath.row]
-//            // configure cell
-//            print("BEFORE SETTING IMAGE")
-//            cell.recipeImageView.image = recipe.picture
-//            print("AFTER SETTING IMAGE")
-//            cell.recipeLabel.text = recipe.name
-//            return cell
-//        }
-//        return UITableViewCell()
-//    }
-
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//    if let destination = segue.destination as?
-//        RecipeExpandedViewController, let index =
-//        filteredTableView.indexPathForSelectedRow?.first {
-//        destination.chosenRecipe = exploreData.recipeList[index]
-//        }
-//    }
     // MARK: - Methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -101,8 +69,7 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate, UIColle
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
         fetchRecipes()
-//        fetchFilteredRecipes()
-        
+        fetchFilteredRecipes(tag: "breakfast")
         // Do any additional setup after loading the view.
     }
     
@@ -111,6 +78,7 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate, UIColle
     }
     
     func fetchRecipes() {
+        
         guard let url = URL(string: exploreData.urlString) else { fatalError("Error getting url") }
         
             let sesh = URLSession.shared.dataTask(with: url) {(data, response, err) in
@@ -138,7 +106,6 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate, UIColle
                             exploreData.recipeList.append(toAdd)
                             DispatchQueue.main.async {
                                 self.recommendedCollectionView.reloadData()
-                                self.filteredTableView.reloadData()
                             }
                         }
                     
@@ -148,6 +115,44 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate, UIColle
             sesh.resume()
     }
     
+    func fetchFilteredRecipes(tag :String) {
+        let urlString = "https://api.spoonacular.com/recipes/random?number=20&tags=\(tag)&apiKey=8b8a10a2cede413daffe571c0a5be321"
+        guard let url = URL(string: urlString) else { fatalError("Error getting url") }
+        print("FETCH FILTERED RECIPES URLSTRING: " + urlString)
+            let sesh = URLSession.shared.dataTask(with: url) {(data, response, err) in
+                guard let recipeData = data else {return}
+                let json = try? JSONSerialization.jsonObject(with: recipeData, options: [])
+                guard let dictionary = json as? [String: Any] else {return}
+                //recipes -> id title image
+                guard let recipes = dictionary["recipes"] as? [[String:Any]] else {return}
+                for (recipe) in recipes {
+                        if let instructions = recipe["analyzedInstructions"] as? [[String:Any]] {
+                            if (instructions.isEmpty) {
+                                continue
+                            }
+                        }
+                        guard let id =  recipe["id"] as? Int else {return}
+                        guard let img = recipe["image"] as? String else {return}
+                        guard let title = recipe["title"] as? String else {return}
+                        guard let imgType = recipe["imageType"] as? String else {return}
+                        
+                        let imgurl = URL(string: img)
+                        if let data = try? Data(contentsOf: imgurl!)
+                        {
+                            let realImage: UIImage = UIImage(data: data)!
+                            let toAdd = Recipe(name: title, picture: realImage, id: id, imgType: imgType, dict: recipe)
+                            exploreData.filteredRecipeList.append(toAdd)
+                            print("ABOUT TO RELOAD DATA")
+                            DispatchQueue.main.async {
+                                self.filteredTableView.reloadData()
+                            }
+                        }
+                }
+                print("FILTERED RECIPE LIST AFTER FETCH: ", exploreData.filteredRecipeList)
+                exploreData.finishedLoading = true
+            }
+            sesh.resume()
+    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return exploreData.recipeList.count
@@ -186,7 +191,7 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate, UIColle
         super.prepare(for: segue, sender:sender)
         if segue.identifier == "exploreFilteredToRecipeExpanded" {
             if let destination = segue.destination as? RecipeExpandedViewController, let index = filteredTableView.indexPathForSelectedRow?.item {
-                destination.chosenRecipe = exploreData.recipeList[index]
+                destination.chosenRecipe = exploreData.filteredRecipeList[index]
             }
         }
         else if segue.identifier == "exploreToRecipe" {

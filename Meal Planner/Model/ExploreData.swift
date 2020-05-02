@@ -49,9 +49,11 @@ public class ExploreData {
     var key: String
     var urlString: String
     var recipeList: [Recipe]
+    var filteredRecipeList: [Recipe]
     init() {
         finishedLoading = false
         recipeList = [Recipe]()
+        filteredRecipeList = [Recipe]()
         //recipeList = [Recipe(name: "garbers", picture: UIImage(named: "garbers")!, id: 313, imgType: "jpg", dict: [String:Any]()), Recipe(name: "NYC", picture: UIImage(named: "skyline")!, id: 23, imgType: "jpg", dict: [String:Any]()), Recipe(name: "garbers", picture: UIImage(named: "garbers")!, id: 313, imgType: "jpg", dict: [String:Any]()), Recipe(name: "garbers", picture: UIImage(named: "garbers")!, id: 313, imgType: "jpg", dict: [String:Any]())]
         key = "8b8a10a2cede413daffe571c0a5be321"
         urlString = "https://api.spoonacular.com/recipes/random?number=10&apiKey=8b8a10a2cede413daffe571c0a5be321"
