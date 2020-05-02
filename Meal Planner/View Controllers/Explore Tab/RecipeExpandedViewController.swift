@@ -42,9 +42,11 @@ class RecipeExpandedViewController: UIViewController {
         super.viewDidLoad()
         recipeNameLabel.text = chosenRecipe?.name
         recipeImage.image = chosenRecipe?.picture
-        //print("RECIPE EXPANDED: chosen recipe is ", chosenRecipe ?? "")
-        guard let preptime = chosenRecipe.dict["readyInMinutes"] as? Int else {return}
-        preparationTimeLabel.text = String(preptime) + " minutes"
+       
+        // Set navigation bar to be invisible
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
         
         guard let extendedIngredients = chosenRecipe.dict["extendedIngredients"] as? [[String:Any]] else {return}
         ingredientsBodyLabel.numberOfLines = 0
