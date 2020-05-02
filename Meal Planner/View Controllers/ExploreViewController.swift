@@ -184,10 +184,17 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate, UIColle
         print("Preparing segue from ExploreData to Recipe Expanded")
         print(sender ?? "no sender")
         super.prepare(for: segue, sender:sender)
-        if let destination = segue.destination as?
-            RecipeExpandedViewController, let index =
-            recommendedCollectionView.indexPathsForSelectedItems?.first {
-            destination.chosenRecipe = exploreData.recipeList[index.row]
+        if segue.identifier == "exploreFilteredToRecipeExpanded" {
+            if let destination = segue.destination as? RecipeExpandedViewController, let index = filteredTableView.indexPathForSelectedRow?.item {
+                destination.chosenRecipe = exploreData.recipeList[index]
+            }
+        }
+        else if segue.identifier == "exploreToRecipe" {
+            if let destination = segue.destination as?
+                RecipeExpandedViewController, let index =
+                recommendedCollectionView.indexPathsForSelectedItems?.first {
+                destination.chosenRecipe = exploreData.recipeList[index.row]
+            }
         }
     }
     

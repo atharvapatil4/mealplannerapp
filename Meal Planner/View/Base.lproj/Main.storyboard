@@ -296,6 +296,7 @@
                                             <outlet property="placeholderView" destination="sU0-XW-8el" id="Vdv-7x-SHS"/>
                                             <outlet property="recipeImageView" destination="4eO-bZ-rEH" id="aYj-T0-JbL"/>
                                             <outlet property="recipeName" destination="Oce-Mo-SV4" id="LQ2-xz-wen"/>
+                                            <segue destination="V2b-j3-zew" kind="show" identifier="exploreFilteredToRecipeExpanded" id="AZ0-L0-6aY"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -725,7 +726,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="5kd-bG-kdE"/>
+        <segue reference="AZ0-L0-6aY"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
