@@ -26,6 +26,7 @@ class RecipeExpandedViewController: UIViewController {
     @IBOutlet var ingredientsBodyLabel: UILabel!
     @IBOutlet var directionsLabel: UILabel!
     @IBOutlet var directionsBodyLabel: UILabel!
+    @IBOutlet weak var bookmarkOutlet: UIButton!
     
     // MARK: - IBActions
     @IBAction func backButtonPressed(_ sender: UIButton) {
@@ -33,6 +34,7 @@ class RecipeExpandedViewController: UIViewController {
     }
     @IBAction func bookmarkButtonPressed(_ sender: UIButton) {
         user.addBookmark(recipe: chosenRecipe)
+        self.bookmarkOutlet.setImage(UIImage(systemName: "bookmark.fill"), for: .normal)
     }
     
     override func viewDidLayoutSubviews() {
